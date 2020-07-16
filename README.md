@@ -23,7 +23,7 @@ yarn add date-fns@^2.14.0 highcharts@^8.1.2 i18next@^19.3.4 react@^16.13.1 react
 We recommend you use the [@pxblue/react-native-auth-workflow](https://www.npmjs.com/package/@pxblue/react-native-auth-workflow) or [@pxblue/react-auth-workflow](https://www.npmjs.com/package/@pxblue/react-auth-workflow) packages, which use this shared logic under the hood. If you want to build your own screens and connect to this shared log, please contact us.
 
 # Documentation
-More information about exported objects and functions can found in the [API](https://raw.githubusercontent.com/pxblue/react-auth-shared/master/docs/API.md) documentation.
+More information about exported objects and functions can found in the [API](https://github.com/pxblue/react-auth-shared/tree/master/docs/API.md) documentation.
 
 # Contributors
 
