@@ -12,6 +12,13 @@ npm install --save @pxblue/react-auth-shared
 yarn add @pxblue/react-auth-shared
 ```
 
+You will also need to install all of the peer dependencies. You can get the latest version of them all by running:
+```
+npm install --save date-fns@^2.14.0 highcharts@^8.1.2 i18next@^19.3.4 react@^16.13.1 react-i18next@^11.3.4 
+// or
+yarn add date-fns@^2.14.0 highcharts@^8.1.2 i18next@^19.3.4 react@^16.13.1 react-i18next@^11.3.4 
+```
+
 # Usage
 We recommend you use the [@pxblue/react-native-auth-workflow](https://www.npmjs.com/package/@pxblue/react-native-auth-workflow) or [@pxblue/react-auth-workflow](https://www.npmjs.com/package/@pxblue/react-auth-workflow) packages, which use this shared logic under the hood. If you want to build your own screens and connect to this shared log, please contact us.
 
