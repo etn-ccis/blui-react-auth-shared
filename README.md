@@ -29,8 +29,8 @@ More information about exported objects and functions can found in the [API](htt
 
 To work on this package as a contributor, first clone down the repository:
 ```shell
-git clone https://github.com/pxblue/react-native-workflows
-cd react-native-workflows/login-workflow
+git clone https://github.com/pxblue/react-auth-shared
+cd react-auth-shared
 ```
 
 You can build the library by running:

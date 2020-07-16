@@ -1,16 +1,16 @@
 {
     "name": "@pxblue/react-auth-shared",
     "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @pxblue/react-native-auth-workflow and @pxblue/react-auth-workflow.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "BSD-3-Clause",
     "author": {
         "name": "PX Blue",
         "email": "pxblue@eaton.com"
     },
-    "homepage": "https://github.com/pxblue/react-native-workflows/tree/master/login-workflow",
+    "homepage": "https://github.com/pxblue/react-auth-shared/tree/master/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pxblue/react-native-workflows/tree/master/login-workflow"
+        "url": "https://github.com/pxblue/react-auth-shared/tree/master"
     },
     "prettier": "@pxblue/prettier-config",
     "main": "lib/commonjs/index.js",
