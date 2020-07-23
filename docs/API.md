@@ -1,5 +1,5 @@
 # API
-This document outlines the various exports and configuration options for the React Native Auth Workflow package.
+This document outlines the various exports and configuration options for the @pxblue/react-auth-shared package.
 
 ## Context Providers
 

@@ -1,16 +1,16 @@
 {
     "name": "@pxblue/react-auth-shared",
     "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @pxblue/react-native-auth-workflow and @pxblue/react-auth-workflow.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "BSD-3-Clause",
     "author": {
         "name": "PX Blue",
         "email": "pxblue@eaton.com"
     },
-    "homepage": "https://github.com/pxblue/react-native-workflows/tree/master/login-workflow",
+    "homepage": "https://github.com/pxblue/react-auth-shared/tree/master/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pxblue/react-native-workflows/tree/master/login-workflow"
+        "url": "https://github.com/pxblue/react-auth-shared/tree/master"
     },
     "prettier": "@pxblue/prettier-config",
     "main": "lib/commonjs/index.js",
@@ -28,6 +28,7 @@
         "test": "jest --passWithNoTests",
         "lint": "eslint \"**/**/*.{tsx,ts}\"",
         "prettier": "prettier \"**/**.{tsx,ts,js,json}\" --write",
+        "prettier:check": "prettier \"**/**.{tsx,ts,js,json}\" --check",
         "build": "bob build",
         "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "validate": "yarn prettier && yarn lint && yarn typescript && yarn test",
@@ -36,14 +37,15 @@
     },
     "peerDependencies": {
         "date-fns": "^2.14.0",
+        "highcharts": "^8.1.2",
         "i18next": "^19.3.4",
         "react": "^16.13.1",
-        "react-i18next": "^11.3.4",
-        "react-native": "^0.62.0",
-        "highcharts": "^8.1.2"
+        "react-i18next": "^11.3.4"
     },
     "devDependencies": {
         "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.10.4",
+        "@babel/preset-react": "^7.10.4",
         "@babel/runtime": "^7.9.2",
         "@pxblue/eslint-config": "^1.1.5",
         "@pxblue/prettier-config": "^1.0.2",
@@ -79,7 +81,6 @@
         "react": "^16.13.1",
         "react-dom": "^16.9.0",
         "react-i18next": "^11.3.4",
-        "react-native": "^0.62.0",
         "react-test-renderer": "16.9.0",
         "typescript": "^3.8.3"
     },
@@ -87,11 +88,7 @@
         "snapshotSerializers": [
             "enzyme-to-json/serializer"
         ],
-        "preset": "react-native",
         "verbose": true,
-        "setupFiles": [
-            "./jestSetupFile.js"
-        ],
         "setupFilesAfterEnv": [
             "<rootDir>setup-tests.js"
         ],
@@ -110,7 +107,6 @@
             "<rootDir>"
         ],
         "modulePathIgnorePatterns": [
-            "<rootDir>/example/node_modules",
             "<rootDir>/lib/"
         ]
     },
@@ -126,10 +122,6 @@
             "src/"
         ]
     },
-    "eslintIgnore": [
-        "node_modules/",
-        "lib/"
-    ],
     "husky": {
         "hooks": {
             "pre-push": "yarn lint && yarn typescript && yarn test"
