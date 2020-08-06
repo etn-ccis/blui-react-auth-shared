@@ -1,7 +1,7 @@
 {
     "name": "@pxblue/react-auth-shared",
     "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @pxblue/react-native-auth-workflow and @pxblue/react-auth-workflow.",
-    "version": "1.0.1",
+    "version": "2.0.0-beta.0",
     "license": "BSD-3-Clause",
     "author": {
         "name": "PX Blue",
@@ -27,8 +27,8 @@
         "install:dependencies": "yarn && yarn build",
         "test": "jest --passWithNoTests",
         "lint": "eslint \"**/**/*.{tsx,ts}\"",
-        "prettier": "prettier \"**/**.{tsx,ts,js,json}\" --write",
-        "prettier:check": "prettier \"**/**.{tsx,ts,js,json}\" --check",
+        "prettier": "prettier \"**/**.{tsx,ts,js,json,md}\" --write",
+        "prettier:check": "prettier \"**/**.{tsx,ts,js,json,md}\" --check",
         "build": "bob build",
         "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "validate": "yarn prettier && yarn lint && yarn typescript && yarn test",
