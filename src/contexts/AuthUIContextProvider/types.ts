@@ -5,7 +5,6 @@
 
 import { AuthUIActions } from './authTypes';
 import { RegistrationUIActions } from './registrationTypes';
-import { ImageSourcePropType } from 'react-native';
 import { PasswordRequirement } from '../../types/ResetPasswordParams';
 
 /**
@@ -50,7 +49,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: Provides an example project image.
      */
-    projectImage?: ImageSourcePropType;
+    projectImage?: number | string;
     /**
      * Contact email to be shown for support.
      *

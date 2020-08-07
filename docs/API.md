@@ -35,7 +35,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.
     -   Default: Passwords must contain a number, uppercase letter, lowercase letter, special character, and be between 8 and 16 characters in length
--   **projectImage** (optional): _`ImageSourcePropType`_
+-   **projectImage** (optional): _`number | string`_
     -   Project image shown on splash screen and login screen.
     -   Dimensions of the image should be 534w x 152h with a transparent background. Differently sized images may not render properly on all devices.
     -   Default: Provides an example project image.

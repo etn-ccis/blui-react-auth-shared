@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   DismissKeyboardView component
     -   Moved to @pxblue/react-native-auth-workflow
 
+### Changed
+
+-   Type for `projectImage` has changed from `ImageSourcePropType` to `number | string` to support React Native _and_ React projects.
+
 ## v1.0.0
 
 ### Changed
