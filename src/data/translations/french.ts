@@ -81,8 +81,13 @@ const resources = {
                 "Entrez l'adresse e-mail du compte associée au compte.\n\n" +
                 'Si ce courrier électronique a un compte chez Eaton, vous recevrez une réponse sous <b>un jour ouvrable</b>.\n\n' +
                 'Pour les problèmes de compte urgents, veuillez appeler le {{phone}}.',
+            INSTRUCTIONS_ALT:
+                `Entrez l'adresse e-mail du compte associée au compte.<br/><br/>` +
+                `Si ce courrier électronique a un compte chez Eaton, vous recevrez une réponse sous <1>un jour ouvrable</1>.<br/><br/>` +
+                `Pour les problèmes de compte urgents, veuillez appeler le <3>{{phone}}</3>.`,
             RESET_CODE_ERROR: `Une erreur s'est produite avec votre code de réinitialisation. `,
             LINK_SENT: 'Un lien pour réinitialiser votre mot de passe a été envoyé à <b>{{email}}</b>.',
+            LINK_SENT_ALT: 'Un lien pour réinitialiser votre mot de passe a été envoyé à <1>{{email}}</1>.',
         },
         LOGIN: {
             INCORRECT_CREDENTIALS: 'Email ou mot de passe incorrect',

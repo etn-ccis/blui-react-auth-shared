@@ -82,8 +82,13 @@ const resources = {
                 'Please enter the account email associated with the account.\n\n' +
                 'If this email has an account with Eaton, you will receive a response within <b>one business day</b>.\n\n' +
                 'For urgent account issues, please call {{phone}}.',
+            INSTRUCTIONS_ALT:
+                'Please enter the account email associated with the account.<br/><br/>' +
+                'If this email has an account with Eaton, you will receive a response within <1>one business day</1>.<br/><br/>' +
+                'For urgent account issues, please call <3>{{phone}}</3>.',
             RESET_CODE_ERROR: 'There was an error with your reset code. ',
             LINK_SENT: 'A link to reset your password has been sent to <b>{{email}}</b>.',
+            LINK_SENT_ALT: 'A link to reset your password has been sent to <1>{{email}}</1>.',
         },
         LOGIN: {
             INCORRECT_CREDENTIALS: 'Incorrect Email or Password',
@@ -164,7 +169,7 @@ const resources = {
         },
         CONTACT_SUPPORT: {
             GENERAL_QUESTIONS: 'General Questions',
-            SUPPORT_MESSAGE: 'For email questions, feedback, or support please email us at ',
+            SUPPORT_MESSAGE: 'For questions, feedback, or support please email us at ',
             EMERGENCY_SUPPORT: 'Emergency Support',
             TECHNICAL_ASSISTANCE: 'For 24/7 technical support, please call ',
         },
