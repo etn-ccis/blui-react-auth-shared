@@ -6,6 +6,8 @@
  * @preferred
  */
 
+import { english, french } from './data/translations';
+
 export * from './constants';
 
 export * from './contexts/AccountUIContext';
@@ -27,7 +29,9 @@ export * from './lib';
 export { AuthUIInternalStore } from './stores/AuthUIInternalStore';
 export * from './types';
 
-export { default as i18n } from './data/translations/i18n';
+export const translations = {
+    english: english,
+    french: french,
+};
 
 export * from './helpers/parseTextForJSX';
-export * from './helpers/DismissKeyboardView';
