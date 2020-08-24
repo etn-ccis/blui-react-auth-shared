@@ -47,6 +47,10 @@ export const defaultAccountUIReducer: AccountUIReducer = (prevState: AccountUISt
                 isLogOut: false,
                 email: action.payload.email,
             };
+        case 'Authentication/Login/Reset':
+            return {
+                ...initialAccountUIState,
+            };
 
         // Logout
         case 'Authentication/Logout/Reset':
