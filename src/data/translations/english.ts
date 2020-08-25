@@ -87,7 +87,7 @@ const resources = {
             INSTRUCTIONS_ALT:
                 'Please enter the account email associated with the account.<br/><br/>' +
                 'If this email has an account with Eaton, you will receive a response within <1>one business day</1>.<br/><br/>' +
-                'For urgent account issues, please call <3>{{phone}}</3>.',
+                'For urgent account issues, please call <4>{{phone}}</4>.',
             RESET_CODE_ERROR: 'There was an error with your reset code. ',
             LINK_SENT: 'A link to reset your password has been sent to <b>{{email}}</b>.',
             LINK_SENT_ALT: 'A link to reset your password has been sent to <1>{{email}}</1>.',
