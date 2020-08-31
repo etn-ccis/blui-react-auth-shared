@@ -27,6 +27,10 @@ export const AccountActions = {
             type: 'Authentication/Login/Failed',
             payload: { email, transitId, errorMessage },
         } as const),
+    resetLogin: () =>
+        ({
+            type: 'Authentication/Login/Reset',
+        } as const),
 
     // Logout
     logout: () =>

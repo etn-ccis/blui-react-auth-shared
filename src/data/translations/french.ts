@@ -61,6 +61,8 @@ const resources = {
             },
             SUCCESS_MESSAGE:
                 "Votre compte a été créé avec le courrier électronique <b>{{email}}</b>.\n\nVotre compte a déjà été ajouté à l'organisation <b>{{organization}}</b>.\n\nAppuyez sur Continuer ci-dessous pour continuer.",
+            SUCCESS_MESSAGE_ALT:
+                "Votre compte a été créé avec le courrier électronique <1>{{email}}</1>.\n\nVotre compte a déjà été ajouté à l'organisation <3>{{organization}}</3>.\n\nAppuyez sur Continuer ci-dessous pour continuer.",
             SUCCESS_EXISTING: `Votre compte à été créé avec succès. Veuillez vous connecter avec l'adresse e-mail et le mot de passe de votre compte Eaton.`,
             FAILURE_MESSAGE:
                 "Nous n'avons pas pu terminer votre inscription. Appuyez sur Continuer ci-dessous pour continuer.",
@@ -81,8 +83,13 @@ const resources = {
                 "Entrez l'adresse e-mail du compte associée au compte.\n\n" +
                 'Si ce courrier électronique a un compte chez Eaton, vous recevrez une réponse sous <b>un jour ouvrable</b>.\n\n' +
                 'Pour les problèmes de compte urgents, veuillez appeler le {{phone}}.',
+            INSTRUCTIONS_ALT:
+                `Entrez l'adresse e-mail du compte associée au compte.<br/><br/>` +
+                `Si ce courrier électronique a un compte chez Eaton, vous recevrez une réponse sous <1>un jour ouvrable</1>.<br/><br/>` +
+                `Pour les problèmes de compte urgents, veuillez appeler le <4>{{phone}}</4>.`,
             RESET_CODE_ERROR: `Une erreur s'est produite avec votre code de réinitialisation. `,
             LINK_SENT: 'Un lien pour réinitialiser votre mot de passe a été envoyé à <b>{{email}}</b>.',
+            LINK_SENT_ALT: 'Un lien pour réinitialiser votre mot de passe a été envoyé à <1>{{email}}</1>.',
         },
         LOGIN: {
             INCORRECT_CREDENTIALS: 'Email ou mot de passe incorrect',
