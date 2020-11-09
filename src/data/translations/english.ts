@@ -173,7 +173,7 @@ const resources = {
             GENERAL_QUESTIONS: 'General Questions',
             SUPPORT_MESSAGE: 'For questions, feedback, or support please email us at ',
             EMERGENCY_SUPPORT: 'Emergency Support',
-            TECHNICAL_ASSISTANCE: 'For 24/7 technical support, please call ',
+            TECHNICAL_ASSISTANCE: 'For technical support, please call ',
         },
     },
 };

@@ -172,7 +172,7 @@ const resources = {
             SUPPORT_MESSAGE:
                 'Pour les questions, commentaires ou assistance par e-mail, veuillez nous envoyer un e-mail à ',
             EMERGENCY_SUPPORT: `Assistance d'urgence`,
-            TECHNICAL_ASSISTANCE: 'Pour une assistance technique 24/7, veuillez appeler ',
+            TECHNICAL_ASSISTANCE: 'Pour une assistance technique, veuillez appeler ',
         },
     },
 };
