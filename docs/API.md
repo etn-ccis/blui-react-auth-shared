@@ -27,7 +27,10 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Contact email address to be shown on the support screen
     -   Default: provides a fake email address
 -   **contactPhone** (optional): _`string`_
-    -   Contact phone number to be shown on the support screen
+    -   Contact phone number to be shown on the support screen (human-readable for display only).
+    -   Default: provides a fake phone number
+-   **contactPhoneLink** (optional): _`string`_
+    -   Contact phone number to be dialed on the support screen
     -   Default: provides a fake phone number
 -   **htmlEula** (optional): _`boolean`_
     -   Set to true if your EULA needs to be rendered as HTML
