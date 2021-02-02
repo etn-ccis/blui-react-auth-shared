@@ -55,7 +55,6 @@ jobs:
       - run:
           name: Publish @pxblue/react-auth-shared
           command:  |
-            cd login-workflow
             MASTER_VERSION=`node -p "require('./package.json').version"`
             NPM_LATEST_VERSION=`npm show @pxblue/react-auth-shared version`
             if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
