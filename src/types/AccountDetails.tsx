@@ -10,3 +10,13 @@ export type AccountDetailInformation = {
     lastName: string;
     phone: string;
 };
+
+export type CustomAccountDetails = {
+    [key: string]: string | number | boolean;
+};
+
+export type AccountDetailsFormProps = {
+    onDetailsChanged: (details: CustomAccountDetails | null, valid: boolean) => void;
+    initialDetails?: CustomAccountDetails;
+    onSubmit?: () => void;
+};

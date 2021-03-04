@@ -6,6 +6,8 @@
 import { AuthUIActions } from './authTypes';
 import { RegistrationUIActions } from './registrationTypes';
 import { PasswordRequirement } from '../../types/ResetPasswordParams';
+import { ComponentType } from 'react';
+import { AccountDetailsFormProps } from '../../types/AccountDetails';
 
 /**
  * The application provides various action functions and properties
@@ -68,6 +70,9 @@ type AuthUIContextProviderProps = {
      * Default: Displays as html
      */
     htmlEula?: boolean;
+
+    // TODO
+    customAccountDetails?: Array<ComponentType<AccountDetailsFormProps> | null>;
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions };

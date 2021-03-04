@@ -24,6 +24,8 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
             contactPhone: props.contactPhone,
             htmlEula: props.htmlEula,
             passwordRequirements: props.passwordRequirements,
+            // TODO
+            customAccountDetails: props.customAccountDetails,
         };
 
         return propsForContext;
@@ -38,6 +40,8 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
         props.registrationActions,
         props.showSelfRegistration,
         props.title,
+        // TODO
+        props.customAccountDetails,
     ]);
 
     return <AuthUIContext.Provider value={memoizedProps}>{props.children}</AuthUIContext.Provider>;
