@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 -   Phone number is no longer part of the default registration properties (you must add it to your custom forms to collect this data)
+-   TODO: Do we want to refactor the charting labels functions to remove the peer dependency on Highcharts?
 
 ## v2.0.1
 
