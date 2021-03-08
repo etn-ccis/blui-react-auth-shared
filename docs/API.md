@@ -23,7 +23,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: false
 -   **authActions**: _`() => AuthUIActions`_
     -   Provides application actions for the user's authentication needs.
--   **background**: (optional) _`BackgroundProperties`_
+-   **background**: (optional) _`Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>`_
     -   Allows you to override the styles used for the workflow background
 -   **contactEmail** (optional): _`string`_
     -   Contact email address to be shown on the support screen
@@ -525,21 +525,6 @@ Used when passing additional custom form elements into the Registration workflow
     -   The size of the background image (accepts any valid CSS background size string).
 -   **backgroundRepeat**: _`() => void`_
     -   Callback function to call when the Enter key is pressed in the last field of your custom form.
-
-## BackgroundProperties
-
-Used to customize the background graphics behind the workflow dialog.
-
-### TypeDeclaration
-
--   **backgroundColor**: (optional) _`string`_
-    -   The color to use for the background (accepts any valid CSS color string).
--   **backgroundImage**: (optional) _`string`_
-    -   The background image to use (accepts any valid CSS background image string).
--   **backgroundSize**: (optional) _`string`_
-    -   The size of the background image (accepts any valid CSS background size string).
--   **backgroundRepeat**: (optional) _`string`_
-    -   The repeat behavior for the background image (Accepts any valid CSS background repeat string).
 
 ## CustomAccountDetails
 

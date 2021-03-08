@@ -6,15 +6,8 @@
 import { AuthUIActions } from './authTypes';
 import { RegistrationUIActions } from './registrationTypes';
 import { PasswordRequirement } from '../../types/ResetPasswordParams';
-import { ComponentType } from 'react';
+import { ComponentType, CSSProperties } from 'react';
 import { AccountDetailsFormProps } from '../../types/AccountDetails';
-
-type BackgroundProperties = {
-    backgroundColor?: string;
-    backgroundImage?: string;
-    backgroundSize?: string;
-    backgroundRepeat?: boolean;
-};
 
 /**
  * The application provides various action functions and properties
@@ -94,7 +87,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: Isometric triangles image.
      */
-    background?: BackgroundProperties;
+    background?: Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>;
     /**
      * Contact email to be shown for support.
      *
