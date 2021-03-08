@@ -95,11 +95,18 @@ type AuthUIContextProviderProps = {
      */
     contactEmail?: string;
     /**
-     * Contact phone number to be shown for support.
+     * Contact phone number to be shown for support. UI-display only (human-readable).
      *
      * Default: Provides a fake phone number.
      */
     contactPhone?: string;
+    /**
+     * Contact phone number to be used with tel URI to open the phone app and make a
+     * call. May include pauses, etc. and therefore not look human-readable.
+     *
+     * Default: Provides a fake phone number.
+     */
+    contactPhoneLink?: string;
     /**
      * Allow the EULA to be displayed as HTML or Text
      *
