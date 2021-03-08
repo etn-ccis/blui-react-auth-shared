@@ -18,20 +18,20 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
             registrationActions: props.registrationActions,
             showSelfRegistration: props.showSelfRegistration,
             enableInviteRegistration: props.enableInviteRegistration,
-            showForgotPassword: props.showForgotPassword,
             showContactSupport: props.showContactSupport,
             enableResetPassword: props.enableResetPassword,
             showRememberMe: props.showRememberMe,
+            showCybersecurityBadge: props.showCybersecurityBadge,
             title: props.title,
             allowDebugMode: props.allowDebugMode,
             projectImage: props.projectImage,
             background: props.background,
             contactEmail: props.contactEmail,
             contactPhone: props.contactPhone,
-            emailValidator: props.emailValidator,
             htmlEula: props.htmlEula,
+            loginFooter: props.loginFooter,
+            loginHeader: props.loginHeader,
             passwordRequirements: props.passwordRequirements,
-            // TODO
             customAccountDetails: props.customAccountDetails,
         };
 
@@ -42,20 +42,20 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
         props.background,
         props.contactEmail,
         props.contactPhone,
-        props.emailValidator,
+        props.customAccountDetails,
         props.enableInviteRegistration,
         props.enableResetPassword,
         props.htmlEula,
+        props.loginFooter,
+        props.loginHeader,
         props.passwordRequirements,
         props.projectImage,
         props.registrationActions,
         props.showContactSupport,
-        props.showForgotPassword,
         props.showRememberMe,
+        props.showCybersecurityBadge,
         props.showSelfRegistration,
         props.title,
-        // TODO
-        props.customAccountDetails,
     ]);
 
     return <AuthUIContext.Provider value={memoizedProps}>{props.children}</AuthUIContext.Provider>;

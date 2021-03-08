@@ -9,6 +9,13 @@ import { PasswordRequirement } from '../../types/ResetPasswordParams';
 import { ComponentType } from 'react';
 import { AccountDetailsFormProps } from '../../types/AccountDetails';
 
+type BackgroundProperties = {
+    backgroundColor?: string;
+    backgroundImage?: string;
+    backgroundSize?: string;
+    backgroundRepeat?: boolean;
+};
+
 /**
  * The application provides various action functions and properties
  * to the authentication user interface. These properties are set
@@ -36,19 +43,13 @@ type AuthUIContextProviderProps = {
      */
     enableInviteRegistration?: boolean;
     /**
-     * When true, the Forgot Password link will be visible on the login screen.
-     *
-     * Default: true
-     */
-    showForgotPassword?: boolean;
-    /**
      * When true, the Contact Support link will be visible on the login screen.
      *
      * Default: true
      */
     showContactSupport?: boolean;
     /**
-     * When true, the Reset Password deep routes will be activated.
+     * When true, the Reset Password deep routes will be activated and a Forgot Password link will appear on the login screen.
      *
      * Default: true
      */
@@ -59,6 +60,12 @@ type AuthUIContextProviderProps = {
      * Default: true
      */
     showRememberMe?: boolean;
+    /**
+     * When true, the Cybersecurity certification badge will be shown on the login screen.
+     *
+     * Default: true
+     */
+    showCybersecurityBadge?: boolean;
     /**
      * When true, presents a button to access link based flows.
      *
@@ -87,12 +94,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: Isometric triangles image.
      */
-    background?: {
-        backgroundColor?: string;
-        backgroundImage?: string;
-        backgroundSize?: string;
-        backgroundRepeat?: boolean;
-    };
+    background?: BackgroundProperties;
     /**
      * Contact email to be shown for support.
      *
@@ -106,24 +108,29 @@ type AuthUIContextProviderProps = {
      */
     contactPhone?: string;
     /**
-     * Custom Regular Expression for validating email addresses.
-     *
-     * Default: any valid email
-     */
-    emailValidator?: RegExp;
-    /**
      * Allow the EULA to be displayed as HTML or Text
      *
      * Default: Displays as html
      */
     htmlEula?: boolean;
     /**
-     * Disable EULA checkbox until the content has been scrolled to the bottom.
+     * Custom content to render below the login form.
      *
-     * Default: false
+     * Default: None
      */
-    //  eulaScrollLock?: boolean; // TODO
-    // TODO
+    loginFooter?: JSX.Element;
+    /**
+     * Custom content to render below the login form.
+     *
+     * Default: None
+     */
+    loginHeader?: JSX.Element;
+
+    /**
+     * Custom screens to render to capture additional user details during registration
+     *
+     * Default: None
+     */
     customAccountDetails?: Array<ComponentType<AccountDetailsFormProps> | null>;
 };
 

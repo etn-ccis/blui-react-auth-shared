@@ -23,15 +23,30 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: false
 -   **authActions**: _`() => AuthUIActions`_
     -   Provides application actions for the user's authentication needs.
+-   **background**: (optional) _`BackgroundProperties`_
+    -   Allows you to override the styles used for the workflow background
 -   **contactEmail** (optional): _`string`_
     -   Contact email address to be shown on the support screen
     -   Default: provides a fake email address
 -   **contactPhone** (optional): _`string`_
     -   Contact phone number to be shown on the support screen
     -   Default: provides a fake phone number
+-   **customAccountDetails**: (optional) _`Array<ComponentType<AccountDetailsFormProps> | null>`_
+    -   Custom forms to add to the user registration process
+-   **enableInviteRegistration**: (optional) _`boolean`_
+    -   When true, the invitation-based workflow screens will be accessible
+    -   Default: true
+-   **enableResetPassword**: (optional) _`boolean`_
+    -   When true, the Forgot Password and Reset Password workflow screens will be accessible
+    -   Default: true
 -   **htmlEula** (optional): _`boolean`_
     -   Set to true if your EULA needs to be rendered as HTML
     -   Default: false
+-   **loginFooter** (optional): _`JSX.Element`_
+    -   Custom content to render below the login form
+-   **loginHeader** (optional): _`JSX.Element`_
+    -   Custom content to render above the login form
+    -   Default: Shows the `projectImage`
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.
     -   Default: Passwords must contain a number, uppercase letter, lowercase letter, special character, and be between 8 and 16 characters in length
@@ -41,11 +56,18 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: Provides an example project image.
 -   **registrationActions**: _`() => RegistrationUIActions`_
     -   Provides application actions for the user's registration needs.
+-   **showContactSupport**: _`boolean`_
+    -   When true, shows the Contact Support button on the login screen.
+    -   Default: true
+-   **showCybersecurityBadge**: _`boolean`_
+    -   When true, shows the Cybersecurity Certified badge on the login screen.
+    -   Default: true
+-   **showRememberMe**: _`boolean`_
+    -   When true, shows the Remember Me checkbox on the login screen.
+    -   Default: true
 -   **showSelfRegistration**: _`boolean`_
     -   When true, shows the Create Account button to allow for self registration.
     -   Default: true
--   TODO: Add custom login props
--   TODO: Add custom details screens
 -   **title** (optional): _`string`_
     -   Title of the application
 
@@ -486,3 +508,46 @@ Keeps track of the state of a network call.
     -   Returns true if the network call is currently active and awaiting a response.
 -   **transitSuccess**: _`boolean`_
     -   Returns true if the previously completed network call returned without error.
+
+# Other Type Definitions
+
+Other useful types.
+
+## AccountDetailsFormProps
+
+Used when passing additional custom form elements into the Registration workflow.
+
+### Type Declaration
+
+-   **onDetailsChanged**: _`(details: CustomAccountDetails | null, valid: boolean) => void`_
+    -   A function that you must call whenever any of your form values changes (valid should be true if the current state of the form values is valid to proceed).
+-   **initialDetails**: _`CustomAccountDetails`_
+    -   Values used to initialize your custom form fields.
+-   **onSubmit**: _`string`_
+    -   The size of the background image (accepts any valid CSS background size string).
+-   **backgroundRepeat**: _`() => void`_
+    -   Callback function to call when the Enter key is pressed in the last field of your custom form.
+
+## BackgroundProperties
+
+Used to customize the background graphics behind the workflow dialog.
+
+### TypeDeclaration
+
+-   **backgroundColor**: (optional) _`string`_
+    -   The color to use for the background (accepts any valid CSS color string).
+-   **backgroundImage**: (optional) _`string`_
+    -   The background image to use (accepts any valid CSS background image string).
+-   **backgroundSize**: (optional) _`string`_
+    -   The size of the background image (accepts any valid CSS background size string).
+-   **backgroundRepeat**: (optional) _`string`_
+    -   The repeat behavior for the background image (Accepts any valid CSS background repeat string).
+
+## CustomAccountDetails
+
+Format used to track values for custom form elements in the Registration workflow.
+
+### TypeDeclaration
+
+-   **[key: string]**: (optional) _`string | number | boolean`_
+    -   A custom value that you want to capture during registration
