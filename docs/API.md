@@ -44,6 +44,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **showSelfRegistration**: _`boolean`_
     -   When true, shows the Create Account button to allow for self registration.
     -   Default: true
+-   TODO: Add custom login props
 -   TODO: Add custom details screens
 -   **title** (optional): _`string`_
     -   Title of the application
