@@ -120,7 +120,7 @@ type AuthUIContextProviderProps = {
      */
     loginFooter?: JSX.Element;
     /**
-     * Custom content to render below the login form.
+     * Custom content to render above the login form.
      *
      * Default: None
      */
