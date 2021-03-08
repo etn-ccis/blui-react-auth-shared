@@ -177,8 +177,6 @@ Type to represent the input of the account details component.
     -   The user's first name
 -   **lastName**: _`string`_
     -   The user's last name / surname.
--   **phone**: _`string`_
-    -   The user's phone number
 
 ## AccountUIState
 
