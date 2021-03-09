@@ -3,7 +3,7 @@
  * @module AuthUIContextProvider
  */
 
-import { AccountDetailInformation } from '../../types/AccountDetails';
+import { AccountDetailInformation, CustomAccountDetails } from '../../types/AccountDetails';
 
 /**
  * Registration Actions to be performed based on the user's actions. The application will create appropriate actions
@@ -56,7 +56,7 @@ export type RegistrationUIActions = {
     completeRegistration(
         userData: {
             password: string;
-            accountDetails: AccountDetailInformation;
+            accountDetails: AccountDetailInformation & CustomAccountDetails;
         },
         validationCode: string,
         validationEmail?: string

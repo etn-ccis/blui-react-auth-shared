@@ -339,7 +339,7 @@ Registration Actions to be performed based on the user's actions. The applicatio
 
 ### Type Declaration
 
--   **completeRegistration**: _`(userData: { accountDetails: AccountDetailInformation, password: string }, validationCode: string, validationEmail?: string) => Promise<{ email: string, organizationName: string }>)`_
+-   **completeRegistration**: _`(userData: { accountDetails: AccountDetailInformation & CustomAccountDetails, password: string }, validationCode: string, validationEmail?: string) => Promise<{ email: string, organizationName: string }>)`_
 
     -   The user has been invited to register and has entered the necessary account and password information. The application should now complete the registration process given the user's data.
 
