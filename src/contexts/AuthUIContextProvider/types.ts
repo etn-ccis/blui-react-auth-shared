@@ -6,6 +6,8 @@
 import { AuthUIActions } from './authTypes';
 import { RegistrationUIActions } from './registrationTypes';
 import { PasswordRequirement } from '../../types/ResetPasswordParams';
+import { ComponentType, CSSProperties } from 'react';
+import { AccountDetailsFormProps } from '../../types/AccountDetails';
 
 /**
  * The application provides various action functions and properties
@@ -27,6 +29,36 @@ type AuthUIContextProviderProps = {
      * Default: true
      */
     showSelfRegistration?: boolean;
+    /**
+     * When true, the invitation-based deep routes will be activated.
+     *
+     * Default: true
+     */
+    enableInviteRegistration?: boolean;
+    /**
+     * When true, the Contact Support link will be visible on the login screen.
+     *
+     * Default: true
+     */
+    showContactSupport?: boolean;
+    /**
+     * When true, the Reset Password deep routes will be activated and a Forgot Password link will appear on the login screen.
+     *
+     * Default: true
+     */
+    enableResetPassword?: boolean;
+    /**
+     * When true, the Remember Me button will be available on the login screen.
+     *
+     * Default: true
+     */
+    showRememberMe?: boolean;
+    /**
+     * When true, the Cybersecurity certification badge will be shown on the login screen.
+     *
+     * Default: true
+     */
+    showCybersecurityBadge?: boolean;
     /**
      * When true, presents a button to access link based flows.
      *
@@ -50,6 +82,12 @@ type AuthUIContextProviderProps = {
      * Default: Provides an example project image.
      */
     projectImage?: number | string;
+    /**
+     * Image shown behind the workflow cards for the authentication and registration workflows.
+     *
+     * Default: Isometric triangles image.
+     */
+    background?: Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>;
     /**
      * Contact email to be shown for support.
      *
@@ -75,6 +113,25 @@ type AuthUIContextProviderProps = {
      * Default: Displays as html
      */
     htmlEula?: boolean;
+    /**
+     * Custom content to render below the login form.
+     *
+     * Default: None
+     */
+    loginFooter?: JSX.Element;
+    /**
+     * Custom content to render above the login form.
+     *
+     * Default: None
+     */
+    loginHeader?: JSX.Element;
+
+    /**
+     * Custom screens to render to capture additional user details during registration
+     *
+     * Default: None
+     */
+    customAccountDetails?: Array<ComponentType<AccountDetailsFormProps> | null>;
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions };

@@ -4,7 +4,7 @@
  */
 
 import { RegistrationActions as DispatchActions } from './dispatchActions';
-import { AccountDetailInformation } from '../../types/AccountDetails';
+import { AccountDetailInformation, CustomAccountDetails } from '../../types/AccountDetails';
 import { RegistrationUIActions } from '../AuthUIContextProvider';
 
 type RegistrationUIActionsFunction = () => RegistrationUIActions;
@@ -73,7 +73,7 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
     completeRegistration: async (
         userData: {
             password: string;
-            accountDetails: AccountDetailInformation;
+            accountDetails: AccountDetailInformation & CustomAccountDetails;
         },
         validationCode: string,
         validationEmail?: string

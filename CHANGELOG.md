@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v3.0.0 (Not Published Yet)
+
+### Added
+
+-   Updated type definitions to allow for further customization of the elements on the Login screen
+-   Updated type definitions to allow for custom forms / data collection in the Registration flow.
+
+### Removed
+
+-   Phone number is no longer part of the default registration properties (you must add it to your custom forms to collect this data)
+-   TODO: Do we want to refactor the charting labels functions to remove the peer dependency on Highcharts?
+
 ## v2.1.0
 
 ### Added
