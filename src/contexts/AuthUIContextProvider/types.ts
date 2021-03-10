@@ -66,10 +66,6 @@ type AuthUIContextProviderProps = {
      */
     allowDebugMode?: boolean;
     /**
-     * Title of the application.
-     */
-    title?: string;
-    /**
      * Array of password strength requirements.
      */
     passwordRequirements?: PasswordRequirement[];

@@ -22,7 +22,6 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
             enableResetPassword: props.enableResetPassword,
             showRememberMe: props.showRememberMe,
             showCybersecurityBadge: props.showCybersecurityBadge,
-            title: props.title,
             allowDebugMode: props.allowDebugMode,
             projectImage: props.projectImage,
             background: props.background,
@@ -57,7 +56,6 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
         props.showRememberMe,
         props.showCybersecurityBadge,
         props.showSelfRegistration,
-        props.title,
     ]);
 
     return <AuthUIContext.Provider value={memoizedProps}>{props.children}</AuthUIContext.Provider>;
