@@ -71,8 +71,6 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **showSelfRegistration**: _`boolean`_
     -   When true, shows the Create Account button to allow for self registration.
     -   Default: true
--   **title** (optional): _`string`_
-    -   Title of the application
 
 ### SecurityContextProvider
 
@@ -524,9 +522,7 @@ Used when passing additional custom form elements into the Registration workflow
     -   A function that you must call whenever any of your form values changes (valid should be true if the current state of the form values is valid to proceed).
 -   **initialDetails**: _`CustomAccountDetails`_
     -   Values used to initialize your custom form fields.
--   **onSubmit**: _`string`_
-    -   The size of the background image (accepts any valid CSS background size string).
--   **backgroundRepeat**: _`() => void`_
+-   **onSubmit**: _`() => void`_
     -   Callback function to call when the Enter key is pressed in the last field of your custom form.
 
 ## CustomAccountDetails
