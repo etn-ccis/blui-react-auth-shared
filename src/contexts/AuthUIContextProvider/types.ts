@@ -85,7 +85,7 @@ type AuthUIContextProviderProps = {
      */
     background?: Pick<
         CSSProperties,
-        'backgroundImage' | 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'
+        'backgroundImage' | 'backgroundColor' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'
     >;
     /**
      * Contact email to be shown for support.
