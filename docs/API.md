@@ -23,7 +23,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: false
 -   **authActions**: _`() => AuthUIActions`_
     -   Provides application actions for the user's authentication needs.
--   **background**: (optional) _`Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>`_
+-   **background**: (optional) _`Pick<CSSProperties, 'backgroundImage' | 'backgroundColor' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>`_
     -   Allows you to override the styles used for the workflow background
 -   **contactEmail** (optional): _`string`_
     -   Contact email address to be shown on the support screen
