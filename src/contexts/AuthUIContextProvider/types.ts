@@ -83,7 +83,10 @@ type AuthUIContextProviderProps = {
      *
      * Default: Isometric triangles image.
      */
-    background?: Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>;
+    background?: Pick<
+        CSSProperties,
+        'backgroundImage' | 'backgroundColor' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'
+    >;
     /**
      * Contact email to be shown for support.
      *
