@@ -24,7 +24,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **authActions**: _`() => AuthUIActions`_
     -   Provides application actions for the user's authentication needs.
 -   **background**: (optional) _`Pick<CSSProperties, 'backgroundImage' | 'backgroundPosition' | 'backgroundSize' | 'backgroundRepeat'>`_
-    -   Allows you to override the styles used for the workflow background
+    -   Allows you to override the styles used for the workflow background. For RN projects, this will only apply to the Login screen and only when using the default header (backgroundRepeat property will have no effect, backgroundSize only affects the height).
 -   **contactEmail** (optional): _`string`_
     -   Contact email address to be shown on the support screen
     -   Default: provides a fake email address
@@ -45,10 +45,10 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **htmlEula** (optional): _`boolean`_
     -   Set to true if your EULA needs to be rendered as HTML
     -   Default: false
--   **loginFooter** (optional): _`JSX.Element`_
-    -   Custom content to render below the login form
--   **loginHeader** (optional): _`JSX.Element`_
-    -   Custom content to render above the login form
+-   **loginFooter** (optional): _`JSX.Element | (navigation: any) => JSX.Element`_
+    -   Custom content to render below the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
+-   **loginHeader** (optional): _`JSX.Element | (navigation: any) => JSX.Element`_
+    -   Custom content to render above the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
     -   Default: Shows the `projectImage`
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.

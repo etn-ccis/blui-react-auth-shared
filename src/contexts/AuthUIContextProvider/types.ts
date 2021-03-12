@@ -114,13 +114,13 @@ type AuthUIContextProviderProps = {
      *
      * Default: None
      */
-    loginFooter?: JSX.Element;
+    loginFooter?: JSX.Element | ((navigation: any) => JSX.Element);
     /**
      * Custom content to render above the login form.
      *
      * Default: None
      */
-    loginHeader?: JSX.Element;
+    loginHeader?: JSX.Element | ((navigation: any) => JSX.Element);
 
     /**
      * Custom screens to render to capture additional user details during registration
