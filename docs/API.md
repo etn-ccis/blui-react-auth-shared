@@ -45,10 +45,10 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **htmlEula** (optional): _`boolean`_
     -   Set to true if your EULA needs to be rendered as HTML
     -   Default: false
--   **loginFooter** (optional): _`JSX.Element`_
-    -   Custom content to render below the login form
--   **loginHeader** (optional): _`JSX.Element`_
-    -   Custom content to render above the login form
+-   **loginFooter** (optional): _`JSX.Element | (navigation: any) => JSX.Element`_
+    -   Custom content to render below the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
+-   **loginHeader** (optional): _`JSX.Element | (navigation: any) => JSX.Element`_
+    -   Custom content to render above the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
     -   Default: Shows the `projectImage`
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.
