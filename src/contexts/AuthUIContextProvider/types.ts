@@ -9,6 +9,11 @@ import { PasswordRequirement } from '../../types/ResetPasswordParams';
 import { ComponentType, CSSProperties } from 'react';
 import { AccountDetailsFormProps } from '../../types/AccountDetails';
 
+type CustomRegistrationForm = {
+    title?: string;
+    instructions?: string;
+    component: ComponentType<AccountDetailsFormProps>;
+};
 /**
  * The application provides various action functions and properties
  * to the authentication user interface. These properties are set
@@ -130,7 +135,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: None
      */
-    customAccountDetails?: Array<ComponentType<AccountDetailsFormProps> | null>;
+    customAccountDetails?: Array<CustomRegistrationForm | null>;
 };
 
-export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions };
+export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };

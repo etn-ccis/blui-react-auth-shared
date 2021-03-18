@@ -13,7 +13,7 @@
 import { useContext } from 'react';
 import { AuthUIContext } from './context';
 import { AuthUIContextProvider } from './provider';
-import { AuthUIContextProviderProps, RegistrationUIActions, AuthUIActions } from './types';
+import { AuthUIContextProviderProps, RegistrationUIActions, AuthUIActions, CustomRegistrationForm } from './types';
 
 /**
  * Allows for the module to grab the properties / actions passed in from the applications.
@@ -31,6 +31,6 @@ export const useInjectedUIContext = (): AuthUIContextProviderProps => {
 };
 
 /** @ignore */
-export type { AuthUIContextProviderProps, RegistrationUIActions, AuthUIActions };
+export type { AuthUIContextProviderProps, RegistrationUIActions, AuthUIActions, CustomRegistrationForm };
 /** @ignore */
 export { AuthUIContextProvider };

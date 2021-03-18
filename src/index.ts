@@ -17,6 +17,7 @@ export type {
     AuthUIContextProviderProps,
     RegistrationUIActions,
     AuthUIActions,
+    CustomRegistrationForm,
 } from './contexts/AuthUIContextProvider';
 export { useInjectedUIContext } from './contexts/AuthUIContextProvider';
 export type { SecurityContextActions } from './contexts/SecurityContextProvider';

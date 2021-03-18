@@ -34,7 +34,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **contactPhoneLink** (optional): _`string`_
     -   Contact phone number to be dialed on the support screen
     -   Default: provides a fake phone number
--   **customAccountDetails**: (optional) _`Array<ComponentType<AccountDetailsFormProps> | null>`_
+-   **customAccountDetails**: (optional) _`Array<CustomRegistrationForm | null>`_
     -   Custom forms to add to the user registration process
 -   **enableInviteRegistration**: (optional) _`boolean`_
     -   When true, the invitation-based workflow screens will be accessible
@@ -512,9 +512,24 @@ Keeps track of the state of a network call.
 
 Other useful types.
 
-## AccountDetailsFormProps
+## CustomRegistrationForm
 
 Used when passing additional custom form elements into the Registration workflow.
+
+### Type Declaration
+
+-   **title**: (optional) _`string`_
+    -   Title to use for the page.
+    -   Default: 'Account Details'
+-   **instructions**:(optional) _`string`_
+    -   Instructions / information to display above the form
+    -   Default: same as built-in form page
+-   **component**: _`ComponentType<AccountDetailsFormProps>`_
+    -   Form component to render.
+
+## AccountDetailsFormProps
+
+Custom forms passed into the registration workflow must adhere to this type definition.
 
 ### Type Declaration
 
