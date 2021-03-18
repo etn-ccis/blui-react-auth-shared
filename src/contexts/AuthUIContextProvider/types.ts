@@ -118,6 +118,12 @@ type AuthUIContextProviderProps = {
      */
     htmlEula?: boolean;
     /**
+     * Custom content to render below the login button and above registration links.
+     *
+     * Default: None
+     */
+    loginActions?: JSX.Element | ((navigation: any) => JSX.Element);
+    /**
      * Custom content to render below the login form.
      *
      * Default: None
