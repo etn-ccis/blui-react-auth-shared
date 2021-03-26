@@ -12,13 +12,22 @@ import { FirstArgument, ThirdArgument } from '../types/general';
 
 type TFunctionWithNoDataDefault = (key: FirstArgument<TFunction>, options?: ThirdArgument<TFunction>) => string;
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export const useLanguageLocale = () => {
+export const useLanguageLocale = (): {
+    t: TFunctionWithNoDataDefault;
+    formatDateTime: (dateTime: string | undefined | null) => string;
+    formatMonthLong: (dateTime: string | undefined | null) => string;
+    formatDate: (dateTime: string | undefined | null) => string;
+    formatDateShort: (dateTime: string | undefined | null) => string;
+    formatTime: (dateTime: string | undefined | null) => string;
+    formatTimeShort: (dateTime: string | undefined | null) => string;
+    timeSince: (dateTime: string | undefined | null) => string;
+} => {
     const { t, i18n } = useTranslation();
 
     const tFunctionWithNoDataDefault: TFunctionWithNoDataDefault = React.useCallback(
         (key, options) => {
             if (typeof options === 'object' && options.count === undefined) {
+                // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
                 return t(`${key}_noData`, { defaultValue: t(key, options), ...options });
             }
 
