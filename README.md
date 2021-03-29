@@ -17,9 +17,9 @@ yarn add @pxblue/react-auth-shared
 You will also need to install all of the peer dependencies. You can get the latest version of them all by running:
 
 ```
-npm install --save date-fns@^2.14.0 highcharts@^8.1.2 i18next@^19.3.4 react@^16.13.1 react-i18next@^11.3.4
+npm install --save date-fns@^2.19.0 i18next@^20.1.0 react@^17.0.0 react-i18next@^11.8.11
 // or
-yarn add date-fns@^2.14.0 highcharts@^8.1.2 i18next@^19.3.4 react@^16.13.1 react-i18next@^11.3.4
+yarn add date-fns@^2.19.0 i18next@^20.1.0 react@^17.0.0 react-i18next@^11.8.11
 ```
 
 # Usage
