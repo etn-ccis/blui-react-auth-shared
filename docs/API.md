@@ -36,6 +36,8 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: provides a fake phone number
 -   **customAccountDetails**: (optional) _`Array<CustomRegistrationForm | null>`_
     -   Custom forms to add to the user registration process
+-   **customRegistrationSuccessScreen**: (optional) _`JSX.Element`_
+    -   Custom content to use as the success screen for Registration flows
 -   **enableInviteRegistration**: (optional) _`boolean`_
     -   When true, the invitation-based workflow screens will be accessible
     -   Default: true

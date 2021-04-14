@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Updated type definitions to allow for further customization of the elements on the Login screen
 -   Updated type definitions to allow for custom forms / data collection in the Registration flow.
+-   Updated type definitions to allow for a custom success screen in the Registration flow.
 
 ### Removed
 
