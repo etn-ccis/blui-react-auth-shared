@@ -142,6 +142,13 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     customAccountDetails?: Array<CustomRegistrationForm | null>;
+
+    /**
+     * Custom screen to render when a user successfully completes registration.
+     *
+     * Default: Provides a generic success screen with Name, Email, and Org details.
+     */
+    customRegistrationSuccessScreen?: JSX.Element;
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };

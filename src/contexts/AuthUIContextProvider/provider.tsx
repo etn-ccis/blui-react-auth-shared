@@ -34,6 +34,7 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
             loginHeader: props.loginHeader,
             passwordRequirements: props.passwordRequirements,
             customAccountDetails: props.customAccountDetails,
+            customRegistrationSuccessScreen: props.customRegistrationSuccessScreen,
         };
 
         return propsForContext;
@@ -45,6 +46,7 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
         props.contactPhone,
         props.contactPhoneLink,
         props.customAccountDetails,
+        props.customRegistrationSuccessScreen,
         props.enableInviteRegistration,
         props.enableResetPassword,
         props.htmlEula,
