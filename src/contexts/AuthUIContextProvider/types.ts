@@ -148,7 +148,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: Provides a generic success screen with Name, Email, and Org details.
      */
-    customRegistrationSuccessScreen?: JSX.Element;
+    customRegistrationSuccessScreen?: JSX.Element | ((navigation: any) => JSX.Element);
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };
