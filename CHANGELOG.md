@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v3.1.0
+## v3.1.0 (Not published yet)
 
 ### Added
 
@@ -17,12 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Updated type definitions to allow for further customization of the elements on the Login screen.
 -   Updated type definitions to allow for custom forms / data collection in the Registration flow.
+-   Peer dependency support for React 17.
 
 ### Removed
 
 -   Phone number is no longer part of the default registration properties (you must add it to your custom forms to collect this data)
 -   Unused `title` prop from `AuthUIContextProvider`.
--   TODO: Do we want to refactor the charting labels functions to remove the peer dependency on Highcharts?
+-   Highcharts formatting functions — these have been moved to [@pxblue/highcharts](https://www.npmjs.com/package/@pxblue/highcharts).
 
 ## v2.1.0 (November 10, 2020)
 
