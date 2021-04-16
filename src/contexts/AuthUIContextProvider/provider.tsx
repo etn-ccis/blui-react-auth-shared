@@ -34,11 +34,13 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
             loginHeader: props.loginHeader,
             passwordRequirements: props.passwordRequirements,
             customAccountDetails: props.customAccountDetails,
-            customRegistrationSuccessScreen: props.customRegistrationSuccessScreen,
+            registrationSuccessScreen: props.registrationSuccessScreen,
+            accountAlreadyExistsScreen: props.accountAlreadyExistsScreen,
         };
 
         return propsForContext;
     }, [
+        props.accountAlreadyExistsScreen,
         props.allowDebugMode,
         props.authActions,
         props.background,
@@ -46,7 +48,7 @@ export const AuthUIContextProvider: React.FC<AuthUIContextProviderProps> = (prop
         props.contactPhone,
         props.contactPhoneLink,
         props.customAccountDetails,
-        props.customRegistrationSuccessScreen,
+        props.registrationSuccessScreen,
         props.enableInviteRegistration,
         props.enableResetPassword,
         props.htmlEula,
