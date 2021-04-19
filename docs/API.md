@@ -18,7 +18,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 
 #### Available Props
 
--   **accountAlreadyExistsScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element`_
+-   **accountAlreadyExistsScreen**: (optional) _`JSX.Element | (navigation: any) => JSX.Element`_
     -   Custom content to use as the success screen for Registration flows when a user already has an account.
 -   **allowDebugMode** (optional): _`boolean`_
     -   When true, presents a debug button on the login screen to allow access to deep link-based screens/flows
@@ -188,7 +188,7 @@ Type to represent the input of the account details component.
 
 ## RegistrationData
 
-Type to represent the input of the account details component for use with the `registrationSuccessScreen` and `accountAlreadyExistsScreen` props on the `AuthUIContextProvider`.
+Type to represent the input of the account details component for use with the `registrationSuccessScreen` prop on the `AuthUIContextProvider`.
 
 ### Type Declaration
 

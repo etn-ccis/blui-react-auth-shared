@@ -155,7 +155,7 @@ type AuthUIContextProviderProps = {
      *
      * Default: Provides a generic success screen.
      */
-    accountAlreadyExistsScreen?: JSX.Element | ((navigation: any, registrationData?: RegistrationData) => JSX.Element);
+    accountAlreadyExistsScreen?: JSX.Element | ((navigation: any) => JSX.Element);
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };
