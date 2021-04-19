@@ -7,7 +7,7 @@ import { AuthUIActions } from './authTypes';
 import { RegistrationUIActions } from './registrationTypes';
 import { PasswordRequirement } from '../../types/ResetPasswordParams';
 import { ComponentType, CSSProperties } from 'react';
-import { AccountDetailsFormProps } from '../../types/AccountDetails';
+import { AccountDetailsFormProps, RegistrationData } from '../../types/AccountDetails';
 
 type CustomRegistrationForm = {
     title?: string;
@@ -142,6 +142,20 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     customAccountDetails?: Array<CustomRegistrationForm | null>;
+
+    /**
+     * Custom screen to render when a user successfully completes registration.
+     *
+     * Default: Provides a generic success screen with Name, Email, and Org details.
+     */
+    registrationSuccessScreen?: JSX.Element | ((navigation: any, registrationData?: RegistrationData) => JSX.Element);
+
+    /**
+     * Custom screen to render when a user successfully completes registration, but already has an account.
+     *
+     * Default: Provides a generic success screen.
+     */
+    accountAlreadyExistsScreen?: JSX.Element | ((navigation: any) => JSX.Element);
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };

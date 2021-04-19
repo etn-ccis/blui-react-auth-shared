@@ -18,6 +18,8 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 
 #### Available Props
 
+-   **accountAlreadyExistsScreen**: (optional) _`JSX.Element | (navigation: any) => JSX.Element`_
+    -   Custom content to use as the success screen for Registration flows when a user already has an account.
 -   **allowDebugMode** (optional): _`boolean`_
     -   When true, presents a debug button on the login screen to allow access to deep link-based screens/flows
     -   Default: false
@@ -62,6 +64,8 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: Provides an example project image.
 -   **registrationActions**: _`() => RegistrationUIActions`_
     -   Provides application actions for the user's registration needs.
+-   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element`_
+    -   Custom content to use as the success screen for Registration flows
 -   **showContactSupport**: _`boolean`_
     -   When true, shows the Contact Support button on the login screen.
     -   Default: true
@@ -181,6 +185,17 @@ Type to represent the input of the account details component.
     -   The user's first name
 -   **lastName**: _`string`_
     -   The user's last name / surname.
+
+## RegistrationData
+
+Type to represent the input of the account details component for use with the `registrationSuccessScreen` prop on the `AuthUIContextProvider`.
+
+### Type Declaration
+
+-   **accountDetails**: (optional) _`AccountDetailInformation | null | undefined`_
+    -   The user's first name and last name / surname.
+-   **email**: (optional) _`string`_
+    -   The user's email.
 
 ## AccountUIState
 
