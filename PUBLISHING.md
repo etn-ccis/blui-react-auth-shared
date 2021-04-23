@@ -12,7 +12,7 @@ npm publish --tag <alpha | beta>
 Alternatively, you can run:
 
 ```sh
-yarn build 
+yarn build
 yarn publish:package
 ```
 
