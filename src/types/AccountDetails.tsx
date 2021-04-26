@@ -18,3 +18,8 @@ export type AccountDetailsFormProps = {
     initialDetails?: CustomAccountDetails;
     onSubmit?: () => void;
 };
+
+export type RegistrationData = {
+    accountDetails?: AccountDetailInformation | null | undefined;
+    email?: string;
+};
