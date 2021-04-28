@@ -1,4 +1,6 @@
-const resources = {
+import { LanguageFile } from './types';
+
+const resources: LanguageFile = {
     translation: {
         ACTIONS: {
             FINISH: 'Finish',
