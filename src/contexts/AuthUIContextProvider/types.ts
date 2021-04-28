@@ -148,7 +148,10 @@ type AuthUIContextProviderProps = {
      *
      * Default: Provides a generic success screen with Name, Email, and Org details.
      */
-    registrationSuccessScreen?: JSX.Element | ((navigation: any, registrationData?: RegistrationData) => JSX.Element) | ((registrationData?: RegistrationData) => JSX.Element);
+    registrationSuccessScreen?:
+        | JSX.Element
+        | ((navigation: any, registrationData?: RegistrationData) => JSX.Element)
+        | ((registrationData?: RegistrationData) => JSX.Element);
 
     /**
      * Custom screen to render when a user successfully completes registration, but already has an account.
