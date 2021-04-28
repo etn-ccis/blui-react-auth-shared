@@ -34,7 +34,7 @@ const resources: LanguageFile = {
         MESSAGES: {
             EMAIL_SENT: 'Correo electrónico enviado',
             WELCOME: 'Bienvenido',
-            WELCOME_PROJECT: 'Bienvenido a {{proyecto}}',
+            WELCOME_PROJECT: 'Bienvenido a {{project}}',
             LOGIN_MESSAGE: 'Has iniciado sesión',
             CONGRATS: '¡Felicidades!',
             CONTACT: 'Póngase en contacto con un representante de soporte de Eaton',
@@ -62,9 +62,9 @@ const resources: LanguageFile = {
                 ACCOUNT_DETAILS: 'Ingrese sus datos a continuación para completar la creación de la cuenta',
             },
             SUCCESS_MESSAGE:
-                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.\n\nTu cuenta ya se ha agregado a la <b> {{organización}} </b> organización.\n\nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.\n\nTu cuenta ya se ha agregado a la <b> {{organization}} </b> organización.\n\nPulse continuar a continuación para finalizar. ',
             SUCCESS_MESSAGE_ALT:
-                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.\n\nTu cuenta ya se ha agregado a la <3> {{organización}} </3> organización.\n\nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.\n\nTu cuenta ya se ha agregado a la <3> {{organization}} </3> organización.\n\nPulse continuar a continuación para finalizar. ',
             SUCCESS_EXISTING:
                 'Tu cuenta ha sido creada satisfactoriamente. Inicie sesión con el correo electrónico y la contraseña de su cuenta Eaton. ',
             FAILURE_MESSAGE: 'No pudimos completar su registro. Presione continuar abajo para terminar. ',
@@ -132,7 +132,7 @@ const resources: LanguageFile = {
             CHANGE_PASSWORD: 'Cambiar contraseña',
             ACCOUNT: 'Cuenta',
         },
-        COUNTER: 'El valor es: {{recuento}}',
+        COUNTER: 'El valor es: {{count}}',
         HEADER: {
             FORGOT_PASSWORD: 'Olvidé mi contraseña',
         },
