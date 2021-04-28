@@ -1,4 +1,6 @@
-const resources = {
+import { LanguageFile } from './types';
+
+const resources: LanguageFile = {
     translation: {
         ACTIONS: {
             FINISH: 'Finish',
@@ -6,8 +8,8 @@ const resources = {
             BACK: 'Back',
             CREATE_ACCOUNT: 'Create Account',
             OKAY: 'Okay',
-            DONE: 'Done',
             CONTINUE: 'Continue',
+            DONE: 'Done',
             LOG_IN: 'Log In',
             LOG_OUT: 'Log Out',
             CLICK_BUTTON: 'Click the button',
