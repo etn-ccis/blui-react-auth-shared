@@ -10,7 +10,7 @@ const resources = {
             DONE: 'Hecho',
             LOG_IN: 'Iniciar sesión',
             LOG_OUT: 'Cerrar sesión',
-            CLICK_BUTTON: 'Cerrar sesión',
+            CLICK_BUTTON: '¡Haga clic en el botón',
             UPDATE_REDUX: '¡Haga clic en el botón para actualizar el valor de la tienda redux!',
             CHANGE_LANGUAGE: '¡Cambie el idioma aquí!',
             GO_HOME: 'Ir a casa',
@@ -60,9 +60,9 @@ const resources = {
                 ACCOUNT_DETAILS: 'Ingrese sus datos a continuación para completar la creación de la cuenta',
             },
             SUCCESS_MESSAGE:
-                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.  N  nTu cuenta ya se ha agregado a la <b> {{organización}} </b> organización.  N  nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.\n\nTu cuenta ya se ha agregado a la <b> {{organización}} </b> organización.\n\nPulse continuar a continuación para finalizar. ',
             SUCCESS_MESSAGE_ALT:
-                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.  N  nTu cuenta ya se ha agregado a la <3> {{organización}} </3> organización.  N  nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.\n\nTu cuenta ya se ha agregado a la <3> {{organización}} </3> organización.\n\nPulse continuar a continuación para finalizar. ',
             SUCCESS_EXISTING:
                 'Tu cuenta ha sido creada satisfactoriamente. Inicie sesión con el correo electrónico y la contraseña de su cuenta Eaton. ',
             FAILURE_MESSAGE: 'No pudimos completar su registro. Presione continuar abajo para terminar. ',
@@ -80,8 +80,8 @@ const resources = {
         FORGOT_PASSWORD: {
             ERROR: 'No se pudo restablecer su contraseña en este momento.',
             INSTRUCTIONS:
-                'Por favor ingrese el correo electrónico de la cuenta asociado con la cuenta.  N  n' +
-                'Si este correo electrónico tiene una cuenta con Eaton, recibirá una respuesta dentro de <b> un día hábil </b>.  N  n' +
+                'Por favor ingrese el correo electrónico de la cuenta asociado con la cuenta.\n\n' +
+                'Si este correo electrónico tiene una cuenta con Eaton, recibirá una respuesta dentro de <b> un día hábil </b>.\n\n' +
                 'Para problemas urgentes con la cuenta, llame al {{phone}}.',
             INSTRUCTIONS_ALT:
                 'Por favor ingrese el correo electrónico de la cuenta asociado con la cuenta. <br/> <br/>' +
