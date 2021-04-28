@@ -6,7 +6,7 @@
  * @preferred
  */
 
-import { english, french, spanish } from './data/translations';
+import { english, french, spanish, chinese } from './data/translations';
 
 export * from './constants';
 
@@ -34,6 +34,7 @@ export const translations = {
     english: english,
     french: french,
     spanish: spanish,
+    chinese: chinese,
 };
 
 export * from './helpers/parseTextForJSX';

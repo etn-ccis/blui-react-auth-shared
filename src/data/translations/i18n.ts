@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import i18n from 'i18next';
-import { fr, enUS, es } from 'date-fns/locale';
+import { fr, enUS, es, zhCN } from 'date-fns/locale';
 
 // for getting the device's language locale
 // 'en' is default deviceLocale
@@ -17,6 +17,10 @@ const getDateLocale = (): Locale => {
         case 'es_MX':
         case 'es_ES':
             return es;
+        case 'zh':
+        case 'zh_CN':
+        case 'zh_TW':
+            return zhCN;
         default:
             return enUS;
     }
