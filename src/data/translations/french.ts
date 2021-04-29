@@ -1,4 +1,6 @@
-const resources = {
+import { LanguageFile } from './types';
+
+const resources: LanguageFile = {
     translation: {
         ACTIONS: {
             FINISH: 'Terminer',
@@ -118,7 +120,7 @@ const resources = {
             FAILURE_MESSAGE: `Votre mot de passe n'a pas pu être réinitialisé. Veuillez réessayer plus tard.`,
         },
         USER_SETTINGS: {
-            Name: 'Nom',
+            NAME: 'Nom',
             EMAIL: 'Email',
             PHONE_NUMBER: 'Numéro de téléphone',
             PASSWORD: 'Mot de passe',
