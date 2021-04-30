@@ -64,7 +64,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: Provides an example project image.
 -   **registrationActions**: _`() => RegistrationUIActions`_
     -   Provides application actions for the user's registration needs.
--   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element`_
+-   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element | (registrationData?: RegistrationData) => JSX.Element`_
     -   Custom content to use as the success screen for Registration flows
 -   **showContactSupport**: _`boolean`_
     -   When true, shows the Contact Support button on the login screen.
