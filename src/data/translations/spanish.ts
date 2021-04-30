@@ -171,9 +171,9 @@ const resources: LanguageFile = {
         },
         CONTACT_SUPPORT: {
             GENERAL_QUESTIONS: 'Preguntas generales',
-            SUPPORT_MESSAGE: 'Si tiene preguntas, comentarios o asistencia, envíenos un correo electrónico a',
+            SUPPORT_MESSAGE: 'Si tiene preguntas, comentarios o asistencia, envíenos un correo electrónico a ',
             EMERGENCY_SUPPORT: 'Soporte de emergencia',
-            TECHNICAL_ASSISTANCE: 'Para obtener asistencia técnica, llame a',
+            TECHNICAL_ASSISTANCE: 'Para obtener asistencia técnica, llame a ',
         },
     },
 };
