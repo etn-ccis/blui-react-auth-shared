@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+-   Corrected some Spanish translations.
 -   Missing space in support strings for spanish translation file.
 
 ## v3.2.0 (April 29, 2021)
