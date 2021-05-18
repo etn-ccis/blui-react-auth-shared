@@ -4,11 +4,11 @@ const resources: LanguageFile = {
     translation: {
         ACTIONS: {
             FINISH: 'Terminar',
-            NEXT: 'Próximo',
-            BACK: 'Regresa',
+            NEXT: 'Siguiente',
+            BACK: 'Atrás',
             CREATE_ACCOUNT: 'Crear una cuenta',
             OKAY: 'Okey',
-            CONTINUE: 'Continuar',
+            CONTINUE: 'Seguir',
             DONE: 'Hecho',
             LOG_IN: 'Iniciar sesión',
             LOG_OUT: 'Cerrar sesión',
@@ -19,15 +19,15 @@ const resources: LanguageFile = {
             GO_TEST: 'Ir a la página de prueba',
             RESEND: 'Reenviar',
             UPDATE: 'Actualizar',
-            REMEMBER: 'Recuérdame',
+            REMEMBER: 'Recordar contraseña',
         },
         LABELS: {
-            EMAIL: 'Dirección de correo electrónico',
+            EMAIL: 'Correo electrónico',
             PASSWORD: 'Contraseña',
             CURRENT_PASSWORD: 'Contraseña actual',
             NEW_PASSWORD: 'Nueva contraseña',
             OPTIONAL: 'Opcional',
-            FORGOT_PASSWORD: '¿Olvidaste su contraseña?',
+            FORGOT_PASSWORD: '¿Ha olvidado su contraseña?',
             NEED_ACCOUNT: '¿Necesitas una cuenta?',
             VIEW_ALL_EVENTS: 'Ver todos los {{count}} eventos',
         },
@@ -36,8 +36,8 @@ const resources: LanguageFile = {
             WELCOME: 'Bienvenido',
             WELCOME_PROJECT: 'Bienvenido a {{project}}',
             LOGIN_MESSAGE: 'Has iniciado sesión',
-            CONGRATS: '¡Felicidades!',
-            CONTACT: 'Póngase en contacto con un representante de soporte de Eaton',
+            CONGRATS: '¡Felicitaciones!',
+            CONTACT: 'Contactar un representante de soporte de Eaton',
             ERROR: '¡Error!',
             EMAIL_ENTRY_ERROR: 'Ingrese un correo electrónico válido',
             SUCCESS: 'Éxito',
@@ -59,22 +59,22 @@ const resources: LanguageFile = {
                 COMPLETE: '¡Cuenta creada!',
             },
             INSTRUCTIONS: {
-                ACCOUNT_DETAILS: 'Ingrese sus datos a continuación para completar la creación de la cuenta',
+                ACCOUNT_DETAILS: 'Ingrese sus datos en seguida para completar la creación de la cuenta',
             },
             SUCCESS_MESSAGE:
-                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.\n\nTu cuenta ya se ha agregado a la <b> {{organization}} </b> organización.\n\nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <b> {{email}} </b>.\n\nTu cuenta ya se ha agregado a la organización <b> {{organization}} </b>.\n\nPulse continuar para finalizar. ',
             SUCCESS_MESSAGE_ALT:
-                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.\n\nTu cuenta ya se ha agregado a la <3> {{organization}} </3> organización.\n\nPulse continuar a continuación para finalizar. ',
+                'Su cuenta se ha creado correctamente con el correo electrónico <1> {{email}} </1>.\n\nTu cuenta ya se ha agregado a la organización <3> {{organization}} </3>.\n\nPulse continuar para finalizar. ',
             SUCCESS_EXISTING:
-                'Tu cuenta ha sido creada satisfactoriamente. Inicie sesión con el correo electrónico y la contraseña de su cuenta Eaton. ',
-            FAILURE_MESSAGE: 'No pudimos completar su registro. Presione continuar abajo para terminar. ',
+                'Tu cuenta ha sido creada con éxito. Inicie sesión con el correo electrónico y la contraseña de su cuenta Eaton. ',
+            FAILURE_MESSAGE: 'No pudimos completar su registro. Pulse continuar para terminar. ',
             UNKNOWN_EMAIL: 'Correo electrónico desconocido',
             UNKNOWN_ORGANIZATION: 'Organización desconocida',
         },
         SELF_REGISTRATION: {
-            INSTRUCTIONS: `Para registrarse para una cuenta Eaton, ingrese la información requerida a continuación. Deberá verificar su dirección de correo electrónico para continuar.`,
+            INSTRUCTIONS: `Para registrarse para una cuenta Eaton, introduzca la información requerida abajo. Deberá verificar su dirección de correo electrónico para continuar.`,
             VERIFY_EMAIL: {
-                MESSAGE: `Se ha enviado un código de verificación a la dirección de correo electrónico que proporcionó. Haga clic en el enlace o ingrese el código a continuación para continuar. Este código es válido por 30 minutos.`,
+                MESSAGE: `Se ha enviado un código de verificación a la dirección de correo electrónico que proporcionó. Haga clic en el enlace o ingrese el código abajo para continuar. Este código es válido por 30 minutos.`,
                 RESEND: 'Reenviar correo electrónico de verificación',
                 VERIFICATION: 'Código de verificación',
             },
@@ -138,7 +138,7 @@ const resources: LanguageFile = {
         },
         ERROR_MESSAGES: {
             '2002': 'El enlace de registro de usuario ya está canjeado.',
-            '9003': 'No se puede realizar la operación solicitada, póngase en contacto con su administrador',
+            '9003': 'No se puede realizar la operación solicitada, por favor contacte su administrador',
         },
         CHANGE_PASSWORD: {
             PASSWORD_CHANGED: 'Contraseña cambiada',
@@ -147,7 +147,7 @@ const resources: LanguageFile = {
                 '¡Su contraseña se actualizó correctamente! Para garantizar la seguridad de su cuenta, deberá iniciar sesión en la aplicación con sus credenciales actualizadas.',
             EMAIL_CONFIRM_MESSAGE: 'Hemos enviado un correo electrónico de confirmación a <b> {{email}} </b>',
             PASSWORD_INFO:
-                'Por favor, seleccione una contraseña. Asegúrese de que su contraseña cumpla con los requisitos de complejidad necesarios que se describen a continuación. ',
+                'Por favor, seleccione una contraseña. Asegúrese de que su contraseña cumple con los requisitos de complejidad necesarios que se describen a continuación. ',
             OLD_PASSWORD: 'Contraseña anterior',
             ERROR_MESSAGE: `Su información no coincide con nuestros registros. Vuelva a ingresar su información para volver a intentarlo.`,
             PROBLEM_OCCURRED: 'Ocurrió un problema:',
@@ -171,9 +171,9 @@ const resources: LanguageFile = {
         },
         CONTACT_SUPPORT: {
             GENERAL_QUESTIONS: 'Preguntas generales',
-            SUPPORT_MESSAGE: 'Si tiene preguntas, comentarios o asistencia, envíenos un correo electrónico a',
+            SUPPORT_MESSAGE: 'Si tiene preguntas, comentarios o necesita asistencia, envíenos un correo electrónico a ',
             EMERGENCY_SUPPORT: 'Soporte de emergencia',
-            TECHNICAL_ASSISTANCE: 'Para obtener asistencia técnica, llame a',
+            TECHNICAL_ASSISTANCE: 'Para obtener asistencia técnica, llame a ',
         },
     },
 };
