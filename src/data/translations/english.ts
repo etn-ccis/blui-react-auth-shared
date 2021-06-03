@@ -23,6 +23,7 @@ const resources: LanguageFile = {
         },
         LABELS: {
             EMAIL: 'Email Address',
+            USERNAME: 'Username',
             PASSWORD: 'Password',
             CURRENT_PASSWORD: 'Current Password',
             NEW_PASSWORD: 'New Password',
