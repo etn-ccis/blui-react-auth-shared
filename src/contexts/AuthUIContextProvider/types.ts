@@ -140,7 +140,7 @@ type AuthUIContextProviderProps = {
     loginHeader?: JSX.Element | ((navigation: any) => JSX.Element);
     /**
      * Type of input to use for login (email or username)
-     * 
+     *
      * Default: email
      */
     loginType?: LoginType;
