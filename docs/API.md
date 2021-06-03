@@ -55,7 +55,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **loginHeader** (optional): _`JSX.Element | (navigation: any) => JSX.Element`_
     -   Custom content to render above the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
     -   Default: Shows the `projectImage`
--   **loginType** (optional): _`"email" | "username"`_
+-   **loginType** (optional): _`'email' | 'username'`_
     -   Type of input to use for login. (Currently available for use with @pxblue/react-auth-workflow@2.2.0 and above)
     -   Default: "email
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
