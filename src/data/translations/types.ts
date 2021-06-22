@@ -20,6 +20,7 @@ export type AuthTranslations = {
     };
     LABELS: {
         EMAIL: string;
+        USERNAME: string;
         PASSWORD: string;
         CURRENT_PASSWORD: string;
         NEW_PASSWORD: string;

@@ -23,6 +23,7 @@ const resources: LanguageFile = {
         },
         LABELS: {
             EMAIL: '邮箱地址',
+            USERNAME: '用户名',
             PASSWORD: '密码',
             CURRENT_PASSWORD: '当前密码',
             NEW_PASSWORD: '新密码',

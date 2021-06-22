@@ -14,6 +14,9 @@ type CustomRegistrationForm = {
     instructions?: string;
     component: ComponentType<AccountDetailsFormProps>;
 };
+
+type LoginType = 'email' | 'username';
+
 /**
  * The application provides various action functions and properties
  * to the authentication user interface. These properties are set
@@ -135,7 +138,12 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     loginHeader?: JSX.Element | ((navigation: any) => JSX.Element);
-
+    /**
+     * Type of input to use for login (email or username)
+     *
+     * Default: email
+     */
+    loginType?: LoginType;
     /**
      * Custom screens to render to capture additional user details during registration
      *
