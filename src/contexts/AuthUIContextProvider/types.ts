@@ -15,6 +15,11 @@ type CustomRegistrationForm = {
     component: ComponentType<AccountDetailsFormProps>;
 };
 
+type RegistrationConfig = {
+    firstNameLengthLimit?: number;
+    lastNameLengthLimit?: number;
+};
+
 type LoginType = 'email' | 'username';
 
 /**
@@ -150,7 +155,6 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     customAccountDetails?: Array<CustomRegistrationForm | null>;
-
     /**
      * Custom screen to render when a user successfully completes registration.
      *
@@ -160,13 +164,18 @@ type AuthUIContextProviderProps = {
         | JSX.Element
         | ((navigation: any, registrationData?: RegistrationData) => JSX.Element)
         | ((registrationData?: RegistrationData) => JSX.Element);
-
     /**
      * Custom screen to render when a user successfully completes registration, but already has an account.
      *
      * Default: Provides a generic success screen.
      */
     accountAlreadyExistsScreen?: JSX.Element | ((navigation: any) => JSX.Element);
+    /**
+     * Sets character limits for the first and last name text fields in the registration workflows.
+     *
+     * Default: None
+     */
+    registrationConfig?: RegistrationConfig;
 };
 
 export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };
