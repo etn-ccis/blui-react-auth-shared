@@ -68,7 +68,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
 -   **registrationActions**: _`() => RegistrationUIActions`_
     -   Provides application actions for the user's registration needs.
 -   **registrationConfig** (optional): _`RegistrationConfig`_
-    -   Sets character limits for the first and last name text fields in the registration workflows.
+    -   Custom configuration for registration workflows.
 -   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element | (registrationData?: RegistrationData) => JSX.Element`_
     -   Custom content to use as the success screen for Registration flows
 -   **showContactSupport**: _`boolean`_
@@ -360,10 +360,19 @@ Custom configuration for registration workflows.
 
 ### Type Declaration
 
--   **firstNameLengthLimit** (optional): _`number`_
-    -   Character limit for the first name text field in the registration workflows.
--   **lastNameLengthLimit** (optional): _`number`_
-    -   Character limit for the last name text field in the registration workflows.
+-   **firstName** (optional): _`InputControl`_
+    -   Customizations for the first name text field in the registration workflows.
+-   **lastName** (optional): _`InputControl`_
+    -   Customizations for the last name text field in the registration workflows.
+
+## InputControl
+
+Custom controls for inputs.
+
+### Type Declaration
+
+-   **maxLength** (optional): _`number`_
+    -   Sets maxLength for an input.
 
 ## RegistrationUIActions
 

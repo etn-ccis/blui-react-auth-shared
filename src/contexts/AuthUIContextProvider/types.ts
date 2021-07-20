@@ -15,9 +15,13 @@ type CustomRegistrationForm = {
     component: ComponentType<AccountDetailsFormProps>;
 };
 
+type InputControl = {
+    maxLength?: number;
+};
+
 type RegistrationConfig = {
-    firstNameLengthLimit?: number;
-    lastNameLengthLimit?: number;
+    firstName?: InputControl;
+    lastName?: InputControl;
 };
 
 type LoginType = 'email' | 'username';
@@ -171,7 +175,7 @@ type AuthUIContextProviderProps = {
      */
     accountAlreadyExistsScreen?: JSX.Element | ((navigation: any) => JSX.Element);
     /**
-     * Sets character limits for the first and last name text fields in the registration workflows.
+     * Custom configuration for registration workflows.
      *
      * Default: None
      */
