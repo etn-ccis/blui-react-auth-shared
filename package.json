@@ -31,6 +31,7 @@
         "prettier:check": "prettier \"**/**.{tsx,ts,js,json,md}\" --check",
         "build": "bob build",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+        "tag:package": "npx -p @pxblue/tag pxb-tag",
         "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "validate": "yarn prettier && yarn lint && yarn typescript && yarn test",
         "precommit": "yarn validate && yarn generate:licenses",
