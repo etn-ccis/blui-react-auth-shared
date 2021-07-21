@@ -8,6 +8,7 @@ const resources: LanguageFile = {
             BACK: 'Retour',
             CREATE_ACCOUNT: 'Créer un compte',
             OKAY: "d'accord",
+            CANCEL: 'Annuler',
             CONTINUE: 'Continuer',
             DONE: 'Terminé',
             LOG_IN: "S'identifier",
