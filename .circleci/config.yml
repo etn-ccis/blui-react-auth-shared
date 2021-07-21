@@ -83,7 +83,7 @@ jobs:
       - run:
           name: Tag @pxblue/react-auth-shared
           command: |
-            yarn tag-package -b $CIRCLE_BRANCH
+            yarn tag:package -b $CIRCLE_BRANCH
 
 workflows:
   version: 2
