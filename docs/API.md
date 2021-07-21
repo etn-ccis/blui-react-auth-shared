@@ -360,14 +360,14 @@ Custom configuration for registration workflows.
 
 ### Type Declaration
 
--   **firstName** (optional): _`InputControl`_
+-   **firstName** (optional): _`TextFieldConfig`_
     -   Customizations for the first name text field in the registration workflows.
--   **lastName** (optional): _`InputControl`_
+-   **lastName** (optional): _`TextFieldConfig`_
     -   Customizations for the last name text field in the registration workflows.
 
-## InputControl
+## TextFieldConfig
 
-Custom controls for inputs.
+Custom configuration for text field inputs.
 
 ### Type Declaration
 

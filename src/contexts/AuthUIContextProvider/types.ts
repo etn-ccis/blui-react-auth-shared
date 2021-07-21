@@ -15,13 +15,13 @@ type CustomRegistrationForm = {
     component: ComponentType<AccountDetailsFormProps>;
 };
 
-type InputControl = {
+type TextFieldConfig = {
     maxLength?: number;
 };
 
 type RegistrationConfig = {
-    firstName?: InputControl;
-    lastName?: InputControl;
+    firstName?: TextFieldConfig;
+    lastName?: TextFieldConfig;
 };
 
 type LoginType = 'email' | 'username';
