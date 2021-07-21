@@ -6,6 +6,7 @@ const resources: LanguageFile = {
             FINISH: '完成',
             NEXT: '下一步',
             BACK: '上一步',
+            CANCEL: '取消',
             CREATE_ACCOUNT: '创建账号',
             OKAY: '好的',
             DONE: '完成',
