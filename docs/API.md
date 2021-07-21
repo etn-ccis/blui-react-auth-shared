@@ -71,6 +71,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Custom configuration for registration workflows.
 -   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element | (registrationData?: RegistrationData) => JSX.Element`_
     -   Custom content to use as the success screen for Registration flows
+    -   Using the type `(navigation: any, registrationData?: RegistrationData) => JSX.Element` is only available for React Native projects. For React projects, you can use the `useHistory` hook from your custom screen to navigate to other routes.
 -   **showContactSupport**: _`boolean`_
     -   When true, shows the Contact Support button on the login screen.
     -   Default: true
