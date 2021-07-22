@@ -8,6 +8,7 @@ const resources: LanguageFile = {
             BACK: 'Retour',
             CREATE_ACCOUNT: 'Créer un compte',
             OKAY: "d'accord",
+            CANCEL: 'Annuler',
             CONTINUE: 'Continuer',
             DONE: 'Terminé',
             LOG_IN: "S'identifier",
@@ -19,7 +20,7 @@ const resources: LanguageFile = {
             GO_TEST: 'Aller à la page de test',
             RESEND: 'Renvoyer',
             UPDATE: 'Mise à jour',
-            REMEMBER: 'Souviens-toi de moi',
+            REMEMBER: 'Souvenez-vous de moi',
         },
         LABELS: {
             EMAIL: 'Adresse e-mail',

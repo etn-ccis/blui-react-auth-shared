@@ -67,8 +67,11 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: Provides an example project image.
 -   **registrationActions**: _`() => RegistrationUIActions`_
     -   Provides application actions for the user's registration needs.
+-   **registrationConfig** (optional): _`RegistrationConfig`_
+    -   Custom configuration for registration workflows.
 -   **registrationSuccessScreen**: (optional) _`JSX.Element | (navigation: any, registrationData?: RegistrationData) => JSX.Element | (registrationData?: RegistrationData) => JSX.Element`_
     -   Custom content to use as the success screen for Registration flows
+    -   Using the type `(navigation: any, registrationData?: RegistrationData) => JSX.Element` is only available for React Native projects. For React projects, you can use the `useHistory` hook from your custom screen to navigate to other routes.
 -   **showContactSupport**: _`boolean`_
     -   When true, shows the Contact Support button on the login screen.
     -   Default: true
@@ -351,6 +354,26 @@ Definition for a security/complexity requirement for application passwords.
     -   The text description of the requirement (e.g., 'contains an uppercase letter')
 -   **regex**: _`RegExp`_
     -   A regular expression the defines the complexity requirement (e.g., `/[A-Z]+/`)
+
+## RegistrationConfig
+
+Custom configuration for registration workflows.
+
+### Type Declaration
+
+-   **firstName** (optional): _`TextFieldConfig`_
+    -   Customizations for the first name text field in the registration workflows.
+-   **lastName** (optional): _`TextFieldConfig`_
+    -   Customizations for the last name text field in the registration workflows.
+
+## TextFieldConfig
+
+Custom configuration for text field inputs.
+
+### Type Declaration
+
+-   **maxLength** (optional): _`number`_
+    -   Sets maxLength for an input.
 
 ## RegistrationUIActions
 

@@ -5,6 +5,7 @@ export type AuthTranslations = {
         BACK: string;
         CREATE_ACCOUNT: string;
         OKAY: string;
+        CANCEL: string;
         CONTINUE: string;
         DONE: string;
         LOG_IN: string;
