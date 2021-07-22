@@ -87,7 +87,7 @@ jobs:
 
 workflows:
   version: 2
-  react_native_workflows:
+  react_auth_shared:
     jobs:
       - build_shared
       - publish:
