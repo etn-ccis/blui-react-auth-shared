@@ -57,7 +57,10 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: Shows the `projectImage`
 -   **loginType** (optional): _`'email' | 'username'`_
     -   Type of input to use for login. (Currently available for use with @pxblue/react-auth-workflow@2.2.0 and above)
-    -   Default: "email
+    -   Default: 'email'
+-   **loginErrorDisplayConfig** (optional): _`LoginErrorDisplayConfig`_
+    -   Custom configuration for the error message display on the login screen.
+    -   Default: {mode: dialog}
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.
     -   Default: Passwords must contain a number, uppercase letter, lowercase letter, special character, and be between 8 and 16 characters in length
@@ -343,6 +346,28 @@ Network state and email for a user attempting to authenticate into the app. Exte
 
 -   **email**: _`string | null`_
     -   The email with which a user is attempting to authenticate into the app.
+
+## LoginErrorDisplayConfig
+
+Custom configuration for the error message display on the login screen.
+
+### Type Declaration
+
+-   **mode** (optional): _`'dialog' | 'message-box' | 'both' | 'none'`_
+    -   Sets whether to show login error messages via a pop-up dialog, an inline message box, both, or neither.
+    -   Default: 'dialog'
+-   **dismissible** (optional): _`boolean`_
+    -   Sets whether the message box can be user dismissed. For use with the `message-box` and `both` modes.
+    -   Default: true
+-   **position** (optional): _`'top' | 'bottom`_
+    -   Sets whether the message box is displayed above or below the login input fields. For use with the `message-box` and `both` modes.
+    -   Default: 'top'
+-   **fontColor** (optional): _`string`_
+    -   Sets the font color of the message box. For use with the `message-box` and `both` modes.
+    -   Default: 'white'
+-   **backgroundColor** (optional): _`string`_
+    -   Sets the background color of the message box. For use with the `message-box` and `both` modes.
+    -   Default: theme.palette.error.main
 
 ## PasswordRequirement
 
