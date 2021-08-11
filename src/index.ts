@@ -18,6 +18,7 @@ export type {
     RegistrationUIActions,
     AuthUIActions,
     CustomRegistrationForm,
+    LoginErrorDisplayConfig,
 } from './contexts/AuthUIContextProvider';
 export { useInjectedUIContext } from './contexts/AuthUIContextProvider';
 export type { SecurityContextActions } from './contexts/SecurityContextProvider';
