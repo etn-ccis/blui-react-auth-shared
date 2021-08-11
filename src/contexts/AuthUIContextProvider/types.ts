@@ -24,6 +24,14 @@ type RegistrationConfig = {
     lastName?: TextFieldConfig;
 };
 
+type LoginErrorDisplayConfig = {
+    mode?: 'dialog' | 'message-box' | 'both' | 'none';
+    dismissible?: boolean;
+    position?: 'top' | 'bottom';
+    fontColor?: string;
+    backgroundColor?: string;
+};
+
 type LoginType = 'email' | 'username';
 
 /**
@@ -154,6 +162,12 @@ type AuthUIContextProviderProps = {
      */
     loginType?: LoginType;
     /**
+     * Custom configuration for the error message display on the login screen.
+     *
+     * Default: {mode: 'dialog'}
+     */
+    loginErrorDisplayConfig?: LoginErrorDisplayConfig;
+    /**
      * Custom screens to render to capture additional user details during registration
      *
      * Default: None
@@ -182,4 +196,10 @@ type AuthUIContextProviderProps = {
     registrationConfig?: RegistrationConfig;
 };
 
-export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };
+export type {
+    AuthUIContextProviderProps,
+    AuthUIActions,
+    RegistrationUIActions,
+    CustomRegistrationForm,
+    LoginErrorDisplayConfig,
+};
