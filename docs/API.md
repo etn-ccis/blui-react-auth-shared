@@ -354,7 +354,7 @@ Custom configuration for the error message display on the login screen.
 ### Type Declaration
 
 -   **mode** (optional): _`'dialog' | 'message-box' | 'both' | 'none'`_
-    -   Sets whether to show login error messages via a pop-up dialog, an inline message box, both, or neither.
+    -   Sets whether to show login error messages via a pop-up dialog, an inline message box, both, or neither. When setting this to 'none' make sure that you are communicating important errors to users in some other way.
     -   Default: 'dialog'
 -   **dismissible** (optional): _`boolean`_
     -   Sets whether the message box can be user dismissed. For use with the `message-box` and `both` modes.
