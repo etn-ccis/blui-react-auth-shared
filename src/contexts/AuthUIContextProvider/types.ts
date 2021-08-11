@@ -196,4 +196,10 @@ type AuthUIContextProviderProps = {
     registrationConfig?: RegistrationConfig;
 };
 
-export type { AuthUIContextProviderProps, AuthUIActions, RegistrationUIActions, CustomRegistrationForm };
+export type {
+    AuthUIContextProviderProps,
+    AuthUIActions,
+    RegistrationUIActions,
+    CustomRegistrationForm,
+    LoginErrorDisplayConfig,
+};
