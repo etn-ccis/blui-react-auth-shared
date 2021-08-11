@@ -60,7 +60,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Default: 'email'
 -   **loginErrorDisplayConfig** (optional): _`LoginErrorDisplayConfig`_
     -   Custom configuration for the error message display on the login screen.
-    -   Default: {mode: dialog}
+    -   Default: { mode: 'dialog' }
 -   **passwordRequirements** (optional): _`PasswordRequirement[]`_
     -   An array of `PasswordRequirement`s that must be satisfied when creating or changing a password.
     -   Default: Passwords must contain a number, uppercase letter, lowercase letter, special character, and be between 8 and 16 characters in length
