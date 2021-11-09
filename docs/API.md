@@ -1,6 +1,6 @@
 # API
 
-This document outlines the various exports and configuration options for the @pxblue/react-auth-shared package.
+This document outlines the various exports and configuration options for the @brightlayer-ui/react-auth-shared package.
 
 ## Context Providers
 
@@ -11,7 +11,7 @@ The AuthUIContextProvider allows for application code to pass in middleware acti
 #### Usage
 
 ```tsx
-import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
+import { AuthUIContextProvider } from '@brightlayer-ui/react-native-auth-workflow';
 
 <AuthUIContextProvider>{/* ...contents */}</AuthUIContextProvider>;
 ```
@@ -56,7 +56,7 @@ import { AuthUIContextProvider } from '@pxblue/react-native-auth-workflow';
     -   Custom content to render above the login form. For React Native projects, the navigation prop will be provided as an argument to allow you to navigate to other screens if needed.
     -   Default: Shows the `projectImage`
 -   **loginType** (optional): _`'email' | 'username'`_
-    -   Type of input to use for login. (Currently available for use with @pxblue/react-auth-workflow@2.2.0 and above)
+    -   Type of input to use for login. (Currently available for use with @brightlayer-ui/react-auth-workflow@2.2.0 and above)
     -   Default: 'email'
 -   **loginErrorDisplayConfig** (optional): _`LoginErrorDisplayConfig`_
     -   Custom configuration for the error message display on the login screen.
@@ -97,7 +97,7 @@ SecurityContextProvider provides a single source of state for the state of user 
 #### Usage
 
 ```tsx
-import { SecurityContextProvider } from '@pxblue/react-native-auth-workflow';
+import { SecurityContextProvider } from '@brightlayer-ui/react-native-auth-workflow';
 
 <SecurityContextProvider>
     <AuthUIContextProvider {...props}>{/* ...contents */}</AuthUIContextProvider>
@@ -113,7 +113,7 @@ Hook for using the global AccountUIActions actions (i.e. logIn, forgotPassword, 
 #### Usage
 
 ```tsx
-import { useAccountUIActions } from '@pxblue/react-native-auth-workflow';
+import { useAccountUIActions } from '@brightlayer-ui/react-native-auth-workflow';
 
 const accountUIActions: AuthUIActions = useAccountUIActions();
 ```
@@ -125,7 +125,7 @@ Hook for using the global account state for account-related global `AccountUISta
 #### Usage
 
 ```tsx
-import { useAccountUIState } from '@pxblue/react-native-auth-workflow';
+import { useAccountUIState } from '@brightlayer-ui/react-native-auth-workflow';
 
 const accountUIState: AccountUIState = useAccountUIState();
 ```
@@ -137,7 +137,7 @@ Hook for using the global RegistrationUIActions actions (i.e. loadEULA, complete
 #### Usage
 
 ```tsx
-import { useRegistrationUIActions } from '@pxblue/react-native-auth-workflow';
+import { useRegistrationUIActions } from '@brightlayer-ui/react-native-auth-workflow';
 
 const registrationActions: RegistrationUIActions = useRegistrationUIActions();
 ```
@@ -149,7 +149,7 @@ Hook for using the global account state for account-related global RegistrationU
 #### Usage
 
 ```tsx
-import { useRegistrationUIState } from '@pxblue/react-native-auth-workflow';
+import { useRegistrationUIState } from '@brightlayer-ui/react-native-auth-workflow';
 
 const registrationState: RegistrationUIState = useRegistrationUIState();
 ```
@@ -163,7 +163,7 @@ A hook to get the security actions (on authenticated / on not authenticated).
 #### Usage
 
 ```tsx
-import { useSecurityActions } from '@pxblue/react-native-auth-workflow';
+import { useSecurityActions } from '@brightlayer-ui/react-native-auth-workflow';
 
 const securityActions: SecurityContextActions = useSecurityAction();
 ```
@@ -177,7 +177,7 @@ A hook to get the security state (authenticated / not authenticated).
 #### Usage
 
 ```tsx
-import { useSecurityState } from '@pxblue/react-native-auth-workflow';
+import { useSecurityState } from '@brightlayer-ui/react-native-auth-workflow';
 
 const securityState: SecurityContextState = useSecurityState();
 ```

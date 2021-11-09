@@ -70,7 +70,7 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Publish @pxblue/react-auth-shared
+          name: Publish @brightlayer-ui/react-auth-shared
           command:  |
             yarn publish:package -b $CIRCLE_BRANCH
 
@@ -81,9 +81,9 @@ jobs:
       - checkout
       - gh/setup
       - run:
-          name: Tag @pxblue/react-auth-shared
+          name: Tag @brightlayer-ui/react-auth-shared
           command: |
-            yarn tag:package -b $CIRCLE_BRANCH
+            yarn tag:package -b $CIRCLE_BRANCH -s -blui-react-auth-shared
 
 workflows:
   version: 2
