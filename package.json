@@ -1,18 +1,18 @@
 {
-    "name": "@pxblue/react-auth-shared",
-    "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @pxblue/react-native-auth-workflow and @pxblue/react-auth-workflow.",
+    "name": "@brightlayer-ui/react-auth-shared",
+    "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @brightlayer-ui/react-native-auth-workflow and @brightlayer-ui/react-auth-workflow.",
     "version": "3.5.0",
     "license": "BSD-3-Clause",
     "author": {
-        "name": "PX Blue",
-        "email": "pxblue@eaton.com"
+        "name": "Brightlayer UI",
+        "email": "brightlayer-ui@eaton.com"
     },
-    "homepage": "https://github.com/pxblue/react-auth-shared/tree/master/",
+    "homepage": "https://github.com/brightlayer-ui/react-auth-shared/tree/master/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pxblue/react-auth-shared/tree/master"
+        "url": "https://github.com/brightlayer-ui/react-auth-shared/tree/master"
     },
-    "prettier": "@pxblue/prettier-config",
+    "prettier": "@brightlayer-ui/prettier-config",
     "main": "lib/commonjs/index.js",
     "module": "lib/module/index.js",
     "types": "lib/typescript/src/index.d.ts",
@@ -30,8 +30,8 @@
         "prettier": "prettier \"**/**.{tsx,ts,js,json,md}\" --write",
         "prettier:check": "prettier \"**/**.{tsx,ts,js,json,md}\" --check",
         "build": "bob build",
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "npx -p @pxblue/tag pxb-tag",
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
         "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "validate": "yarn prettier && yarn lint && yarn typescript && yarn test",
         "precommit": "yarn validate && yarn generate:licenses",
@@ -49,8 +49,8 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/runtime": "^7.9.2",
-        "@pxblue/eslint-config": "^2.0.4",
-        "@pxblue/prettier-config": "^1.0.2",
+        "@brightlayer-ui/eslint-config": "^2.0.4",
+        "@brightlayer-ui/prettier-config": "latest",
         "@react-native-community/bob": "^0.10.0",
         "@types/enzyme": "^3.10.5",
         "@types/enzyme-adapter-react-16": "^1.0.6",
