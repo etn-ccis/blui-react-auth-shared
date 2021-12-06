@@ -45,7 +45,7 @@ const resources: LanguageFile = {
             SUCCESS: 'Sucesso',
             FAILURE: 'Falha',
             LOADING: 'A carregar...',
-            REQUEST_ERROR: 'Pedimos desculpa, existe um problema ao enviar o seu pedido',
+            REQUEST_ERROR: 'Pedimos desculpa, existe um problema ao submeter o seu pedido',
         },
         REGISTRATION: {
             EULA: {
