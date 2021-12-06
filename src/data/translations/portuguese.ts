@@ -14,7 +14,7 @@ const resources: LanguageFile = {
             LOG_IN: 'Iniciar Sessão',
             LOG_OUT: 'Terminar Sessão',
             CLICK_BUTTON: 'Clique no botão',
-            UPDATE_REDUX: 'Clique no botão para atualizar the redux store value!',
+            UPDATE_REDUX: 'Clique no botão para atualizar o valor de armazenamento redux!',
             CHANGE_LANGUAGE: 'Alterar idioma aqui!',
             GO_HOME: 'Ir para a Página Principal',
             GO_TEST: 'Ir para a Página de testes',
@@ -49,7 +49,7 @@ const resources: LanguageFile = {
         },
         REGISTRATION: {
             EULA: {
-                LOADING: 'A carregar Licença de Utilizador Final...',
+                LOADING: 'A carregar Contrato de Licença de Utilizador Final...',
                 AGREE_TERMS: 'Li e concordo com os Termos e Condições',
             },
             STEPS: {
@@ -165,8 +165,8 @@ const resources: LanguageFile = {
         LEGAL: {
             TITLE: 'Legal',
             TERMSANDCONDITIONS: 'Termos e Condições',
-            EULA: 'End User License Agreement',
-            OPENSOURCELICENSES: 'Open Source Licenses',
+            EULA: 'Contrato de Licença de Utilizador Final',
+            OPENSOURCELICENSES: 'Licenças Código Aberto',
         },
         USER_MENU: {
             LOG_OUT: 'Terminar Sessão',
