@@ -37,7 +37,7 @@ const resources: LanguageFile = {
             EMAIL_SENT: 'E-mail enviado',
             WELCOME: 'Bem vindo',
             WELCOME_PROJECT: 'Bem vindo ao {{project}}',
-            LOGIN_MESSAGE: "Iniciou sessão!",
+            LOGIN_MESSAGE: 'Iniciou sessão!',
             CONGRATS: 'Parabéns!',
             CONTACT: 'Contacte um representante do apoio técnico da Eaton',
             ERROR: 'Erro!',
@@ -74,17 +74,18 @@ const resources: LanguageFile = {
             UNKNOWN_ORGANIZATION: 'Organização desconhecida',
         },
         SELF_REGISTRATION: {
-            INSTRUCTIONS: 'Para se registar para uma conta Eaton, insira a informação obrigatória nos campos abaixo. Será necessário verificar o e-mail para continuar.',
+            INSTRUCTIONS:
+                'Para se registar para uma conta Eaton, insira a informação obrigatória nos campos abaixo. Será necessário verificar o e-mail para continuar.',
             VERIFY_EMAIL: {
                 MESSAGE:
-                'Foi enviado um código de verificação para o e-mail que indicou. Clique no link ou preencha o campo com o código para continuar. Este código é válido durante 30 minutos.',
+                    'Foi enviado um código de verificação para o e-mail que indicou. Clique no link ou preencha o campo com o código para continuar. Este código é válido durante 30 minutos.',
                 RESEND: 'Reenviar e-mail de verificação',
                 VERIFICATION: 'Código de verificação',
             },
         },
         FORGOT_PASSWORD: {
             ERROR: 'De momento, não foi possível redefinir a sua palavra-passe.',
-            INSTRUCTIONS: 
+            INSTRUCTIONS:
                 'Por favor, insira o e-mail associado com a conta.\n\n' +
                 'Se este e-mail tem uma conta com a Eaton, irá receber uma resposta dentro de <1>um dia útil</1>.<br/><br/>' +
                 'Para assuntos urgentes relacionados com a sua conta, por favor contacte <4>{{phone}}</4>.',
@@ -147,7 +148,7 @@ const resources: LanguageFile = {
             PASSWORD_CHANGED: 'Palavra-passe alterada',
             PASSWORD: 'Alterar Palavra-passe',
             SUCCESS_MESSAGE:
-                "A sua palavra-passe foi atualizada! Para assegurar a segurança da sua conta, terá de iniciar sessão na aplicação com as suas credenciais atualizadas.",
+                'A sua palavra-passe foi atualizada! Para assegurar a segurança da sua conta, terá de iniciar sessão na aplicação com as suas credenciais atualizadas.',
             EMAIL_CONFIRM_MESSAGE: 'Enviámos um e-mail de confirmação para <b>{{email}}</b>',
             PASSWORD_INFO:
                 'Por favor selecione uma palavra-passe. Make sure that your password meets the necessary complexity requirements outlined below.',
