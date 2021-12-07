@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   Support for Portuguese translations.
+-   Type checking for errors.
 
 ## v3.5.0 (November 11, 2021)
 
