@@ -13,7 +13,7 @@
  * @preferred
  */
 
-import { english, french, spanish, chinese } from './data/translations';
+import { english, french, spanish, chinese, portuguese } from './data/translations';
 
 export * from './constants';
 
@@ -43,6 +43,7 @@ export const translations = {
     french: french,
     spanish: spanish,
     chinese: chinese,
+    portuguese: portuguese,
 };
 
 export * from './helpers/parseTextForJSX';
