@@ -34,8 +34,10 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             dispatch(DispatchActions.loadEulaSucceeded(transitId));
             return eulaText;
         } catch (error) {
-            dispatch(DispatchActions.loadEulaFailed(transitId, error.message));
-            throw error;
+            if (error instanceof Error) {
+                dispatch(DispatchActions.loadEulaFailed(transitId, error.message));
+                throw error;
+            } else throw error;
         }
     },
     requestRegistrationCode: async (email: string): Promise<void> => {
@@ -45,7 +47,9 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             await injectedActions.requestRegistrationCode(email);
             dispatch(DispatchActions.requestRegistrationCodeSucceeded(transitId));
         } catch (error) {
-            dispatch(DispatchActions.requestRegistrationCodeFailed(transitId, error.message));
+            if (error instanceof Error) {
+                dispatch(DispatchActions.requestRegistrationCodeFailed(transitId, error.message));
+            } else throw error;
         }
     },
     validateUserRegistrationRequest: async (validationCode: string, validationEmail?: string): Promise<boolean> => {
@@ -60,14 +64,16 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             dispatch(DispatchActions.validateUserRegistrationSucceeded(transitId));
             return registrationComplete;
         } catch (error) {
-            // Need this for debug. No real security risk
-            if (validationCode === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
-                dispatch(DispatchActions.validateUserRegistrationSucceeded(transitId));
-                return false;
-            }
+            if (error instanceof Error) {
+                // Need this for debug. No real security risk
+                if (validationCode === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
+                    dispatch(DispatchActions.validateUserRegistrationSucceeded(transitId));
+                    return false;
+                }
 
-            dispatch(DispatchActions.validateUserRegistrationFailed(transitId, error.message));
-            throw error;
+                dispatch(DispatchActions.validateUserRegistrationFailed(transitId, error.message));
+                throw error;
+            } else throw error;
         }
     },
     completeRegistration: async (
@@ -87,8 +93,10 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             dispatch(DispatchActions.registerUserSucceeded(transitId, userDetails.email, userDetails.organizationName));
             return userDetails;
         } catch (error) {
-            dispatch(DispatchActions.registerUserFailed(transitId, error.message));
-            throw error;
+            if (error instanceof Error) {
+                dispatch(DispatchActions.registerUserFailed(transitId, error.message));
+                throw error;
+            } else throw error;
         }
     },
 });
