@@ -41,7 +41,7 @@ export const AccountActionsCreator: AccountUIActionsCreator = (injectedActions, 
             // is no longer on screen, which causes an error.
             // dispatch(DispatchActions.loginSucceeded(email, transitId));
         } catch (error) {
-             if (error instanceof Error) {
+            if (error instanceof Error) {
                 dispatch(DispatchActions.loginFailed(email, transitId, error.message));
             } else throw error;
         }
@@ -54,8 +54,8 @@ export const AccountActionsCreator: AccountUIActionsCreator = (injectedActions, 
             dispatch(DispatchActions.resetPasswordSucceeded(email, transitId));
         } catch (error) {
             if (error instanceof Error) {
-            dispatch(DispatchActions.resetPasswordFailed(email, transitId, error.message));
-            } else throw error
+                dispatch(DispatchActions.resetPasswordFailed(email, transitId, error.message));
+            } else throw error;
         }
     },
     verifyResetCode: async (code: string, email?: string): Promise<void> => {
@@ -67,13 +67,13 @@ export const AccountActionsCreator: AccountUIActionsCreator = (injectedActions, 
         } catch (error) {
             // Need this for debug. No real security risk
             if (error instanceof Error) {
-            if (code === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
-                dispatch(DispatchActions.verifyResetCodeSucceeded(transitId));
-                return;
-            }
+                if (code === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
+                    dispatch(DispatchActions.verifyResetCodeSucceeded(transitId));
+                    return;
+                }
 
-            dispatch(DispatchActions.verifyResetCodeFailed(transitId, error.message));
-        } else throw error
+                dispatch(DispatchActions.verifyResetCodeFailed(transitId, error.message));
+            } else throw error;
         }
     },
     setPassword: async (code: string, password: string, email?: string): Promise<void> => {
@@ -84,8 +84,8 @@ export const AccountActionsCreator: AccountUIActionsCreator = (injectedActions, 
             dispatch(DispatchActions.setPasswordSucceeded(transitId));
         } catch (error) {
             if (error instanceof Error) {
-            dispatch(DispatchActions.setPasswordFailed(transitId, error.message));
-            } else throw error
+                dispatch(DispatchActions.setPasswordFailed(transitId, error.message));
+            } else throw error;
         }
     },
     changePassword: injectedActions.changePassword,

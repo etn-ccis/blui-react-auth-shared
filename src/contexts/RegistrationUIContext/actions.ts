@@ -35,8 +35,8 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             return eulaText;
         } catch (error) {
             if (error instanceof Error) {
-            dispatch(DispatchActions.loadEulaFailed(transitId, error.message));
-            throw error;
+                dispatch(DispatchActions.loadEulaFailed(transitId, error.message));
+                throw error;
             } else throw error;
         }
     },
@@ -48,8 +48,8 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             dispatch(DispatchActions.requestRegistrationCodeSucceeded(transitId));
         } catch (error) {
             if (error instanceof Error) {
-            dispatch(DispatchActions.requestRegistrationCodeFailed(transitId, error.message));
-            }else throw error;
+                dispatch(DispatchActions.requestRegistrationCodeFailed(transitId, error.message));
+            } else throw error;
         }
     },
     validateUserRegistrationRequest: async (validationCode: string, validationEmail?: string): Promise<boolean> => {
@@ -65,15 +65,15 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             return registrationComplete;
         } catch (error) {
             if (error instanceof Error) {
-            // Need this for debug. No real security risk
-            if (validationCode === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
-                dispatch(DispatchActions.validateUserRegistrationSucceeded(transitId));
-                return false;
-            }
+                // Need this for debug. No real security risk
+                if (validationCode === 'DEBUG_VALIDATION_CODE_DEADBEEF') {
+                    dispatch(DispatchActions.validateUserRegistrationSucceeded(transitId));
+                    return false;
+                }
 
-            dispatch(DispatchActions.validateUserRegistrationFailed(transitId, error.message));
-            throw error;
-        } else throw error;
+                dispatch(DispatchActions.validateUserRegistrationFailed(transitId, error.message));
+                throw error;
+            } else throw error;
         }
     },
     completeRegistration: async (
@@ -94,8 +94,8 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
             return userDetails;
         } catch (error) {
             if (error instanceof Error) {
-            dispatch(DispatchActions.registerUserFailed(transitId, error.message));
-            throw error;
+                dispatch(DispatchActions.registerUserFailed(transitId, error.message));
+                throw error;
             } else throw error;
         }
     },
