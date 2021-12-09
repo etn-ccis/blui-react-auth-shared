@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v3.6.0 (December 9, 2021)
+
+### Added
+
+-   Support for Portuguese translations.
+-   Type checking for errors.
+
 ## v3.5.0 (November 11, 2021)
 
 ### Changed
