@@ -6,7 +6,8 @@ jobs:
   build_shared:
     working_directory: ~/react-auth-shared
     docker:
-      - image: circleci/node:12.6
+      - image: cimg/node:14.19.0-browsers
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -25,9 +26,6 @@ jobs:
           name: Prettier Check
           command: |
             yarn prettier:check
-      - run:
-          name: Set Max Memory
-          command: NODE_OPTIONS=--max_old_space_size=4096
       - run:
           name: Lint
           command: |
@@ -48,7 +46,7 @@ jobs:
   coverage_report:
         working_directory: ~/react-auth-shared
         docker:
-            - image: circleci/node:12.9.1-browsers
+            - image: cimg/node:14.19.0-browsers
         steps:
             - checkout
             - attach_workspace:
@@ -59,7 +57,7 @@ jobs:
 
   publish:
     docker:
-      - image: circleci/node:12.9.1-browsers
+      - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
       - attach_workspace:
@@ -76,7 +74,7 @@ jobs:
 
   tag:
     docker:
-      - image: circleci/node:12.9.1-browsers
+      - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
       - gh/setup
