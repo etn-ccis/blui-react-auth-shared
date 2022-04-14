@@ -194,8 +194,6 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     registrationConfig?: RegistrationConfig;
-
-    children?: React.ReactNode;
 };
 
 export type {
