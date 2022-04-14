@@ -14,7 +14,7 @@ import { initialRegistrationState } from '../contexts/RegistrationUIContext/stat
 import { useInjectedUIContext } from '../contexts/AuthUIContextProvider';
 import { AccountActionsCreator } from '../contexts/AccountUIContext/actions';
 
-export const AuthUIInternalStore: React.FC = (props) => {
+export const AuthUIInternalStore: React.FC<React.PropsWithChildren<unknown>> = (props) => {
     const injectedContext = useInjectedUIContext();
 
     // Setup the Authentication Items

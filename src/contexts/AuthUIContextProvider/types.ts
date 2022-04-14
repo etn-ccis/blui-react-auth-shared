@@ -12,7 +12,7 @@ import { AccountDetailsFormProps, RegistrationData } from '../../types/AccountDe
 type CustomRegistrationForm = {
     title?: string;
     instructions?: string;
-    component: ComponentType<AccountDetailsFormProps>;
+    component: ComponentType<React.PropsWithChildren<AccountDetailsFormProps>>;
 };
 
 type TextFieldConfig = {
