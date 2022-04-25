@@ -23,7 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Fixed non-bold text on Forgot Password screen when using Portuguese translations ([#59](https://github.com/brightlayer-ui/react-auth-shared/issues/59)).
 
-
 ## v3.6.0 (December 9, 2021)
 
 ### Added
