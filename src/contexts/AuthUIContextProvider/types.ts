@@ -194,7 +194,7 @@ type AuthUIContextProviderProps = {
      * Default: None
      */
     registrationConfig?: RegistrationConfig;
-     /**
+    /**
      * When true, pager animations will be disabled.
      *
      * Default: false
