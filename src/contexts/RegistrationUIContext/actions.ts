@@ -30,7 +30,7 @@ export const RegistrationActionsCreator: RegistrationUIActionsCreator = (
 
         dispatch(DispatchActions.loadEulaStarted(transitId, language));
         try {
-          const eulaText = await injectedActions.loadEULA(language);
+            const eulaText = await injectedActions.loadEULA(language);
             dispatch(DispatchActions.loadEulaSucceeded(transitId));
             return eulaText;
         } catch (error) {
