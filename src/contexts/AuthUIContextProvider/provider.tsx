@@ -39,6 +39,7 @@ export const AuthUIContextProvider: React.FC<React.PropsWithChildren<AuthUIConte
             registrationSuccessScreen: props.registrationSuccessScreen,
             accountAlreadyExistsScreen: props.accountAlreadyExistsScreen,
             registrationConfig: props.registrationConfig,
+            disablePagerAnimation: props.disablePagerAnimation,
         };
 
         return propsForContext;
@@ -51,6 +52,7 @@ export const AuthUIContextProvider: React.FC<React.PropsWithChildren<AuthUIConte
         props.contactPhone,
         props.contactPhoneLink,
         props.customAccountDetails,
+        props.disablePagerAnimation,
         props.registrationSuccessScreen,
         props.enableInviteRegistration,
         props.enableResetPassword,

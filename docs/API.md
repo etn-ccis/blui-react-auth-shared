@@ -38,6 +38,9 @@ import { AuthUIContextProvider } from '@brightlayer-ui/react-native-auth-workflo
     -   Default: provides a fake phone number
 -   **customAccountDetails**: (optional) _`Array<CustomRegistrationForm | null>`_
     -   Custom forms to add to the user registration process
+-   **disablePagerAnimation**: (optional) _`boolean`_
+    -   When true, pager animations will be disabled for React Native projects.
+    -   Default: false
 -   **enableInviteRegistration**: (optional) _`boolean`_
     -   When true, the invitation-based workflow screens will be accessible
     -   Default: true
