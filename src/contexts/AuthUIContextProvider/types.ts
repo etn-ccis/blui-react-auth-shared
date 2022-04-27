@@ -195,7 +195,7 @@ type AuthUIContextProviderProps = {
      */
     registrationConfig?: RegistrationConfig;
     /**
-     * When true, pager animations will be disabled.
+     * When true, pager animations will be disabled for React Native projects.
      *
      * Default: false
      */
