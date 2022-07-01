@@ -78,6 +78,7 @@ const resources: LanguageFile = {
             VERIFY_EMAIL: {
                 MESSAGE: `Un code de vérification a été envoyé à l'adresse e-mail que vous avez fournie. Cliquez sur le lien ou entrez le code ci-dessous pour continuer. Ce code est valable 30 minutes.`,
                 RESEND: `Renvoyer l'e-mail de vérification`,
+                VERIFICATION_CODE_PROMPT: 'Vous n\'avez pas reçu de code ?',
                 VERIFICATION: 'Code de vérification',
             },
         },
