@@ -78,7 +78,7 @@ const resources: LanguageFile = {
                 MESSAGE:
                     '已向您的邮箱中发送了一封验证邮件。请点击邮件中的链接，或者在此输入邮件中的验证码。验证邮件在30分钟内有效。',
                 RESEND: '重新发送验证邮件',
-                VERIFICATION_CODE_PROMPT: '沒有收到驗證碼',
+                VERIFICATION_CODE_PROMPT: '没有收到验证码？',
                 VERIFICATION: '验证码',
             },
         },
