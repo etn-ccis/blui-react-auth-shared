@@ -72,6 +72,7 @@ export type AuthTranslations = {
         VERIFY_EMAIL: {
             MESSAGE: string;
             RESEND: string;
+            VERIFICATION_CODE_PROMPT: string;
             VERIFICATION: string;
         };
     };

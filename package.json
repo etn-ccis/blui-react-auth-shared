@@ -1,7 +1,7 @@
 {
     "name": "@brightlayer-ui/react-auth-shared",
     "description": "Re-usable react logic for Authentication and Registration within Eaton applications. For use with @brightlayer-ui/react-native-auth-workflow and @brightlayer-ui/react-auth-workflow.",
-    "version": "3.7.0",
+    "version": "3.7.1-beta.0",
     "license": "BSD-3-Clause",
     "author": {
         "name": "Brightlayer UI",
@@ -57,7 +57,7 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/runtime": "^7.9.2",
-        "@brightlayer-ui/eslint-config": "^2.0.4",
+        "@brightlayer-ui/eslint-config": "^3.0.1",
         "@brightlayer-ui/prettier-config": "latest",
         "@react-native-community/bob": "^0.10.0",
         "@types/enzyme": "^3.10.5",
