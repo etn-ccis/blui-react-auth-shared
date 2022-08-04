@@ -88,7 +88,7 @@ const resources: LanguageFile = {
             ERROR: 'De momento, não foi possível redefinir a sua palavra-passe.',
             INSTRUCTIONS:
                 'Por favor, insira o e-mail associado com a conta.\n\n' +
-                'Se este e-mail tem uma conta com a Eaton, irá receber uma resposta dentro de <1>um dia útil</1>.<br/><br/>' +
+                'Se este e-mail tem uma conta com a Eaton, irá receber uma resposta dentro de <1>um dia útil</1>.\n\n' +
                 'Para assuntos urgentes relacionados com a sua conta, por favor contacte <4>{{phone}}</4>.',
             INSTRUCTIONS_ALT:
                 'Por favor, insira o e-mail associado com a conta.<br/><br/>' +
@@ -152,7 +152,7 @@ const resources: LanguageFile = {
                 'A sua palavra-passe foi atualizada! Para assegurar a segurança da sua conta, terá de iniciar sessão na aplicação com as suas credenciais atualizadas.',
             EMAIL_CONFIRM_MESSAGE: 'Enviámos um e-mail de confirmação para <b>{{email}}</b>',
             PASSWORD_INFO:
-                'Por favor selecione uma palavra-passe. Make sure that your password meets the necessary complexity requirements outlined below.',
+                'Por favor selecione uma palavra-passe. Certifique-se de que sua senha atenda aos requisitos de complexidade necessários descritos abaixo.',
             OLD_PASSWORD: 'Palavra-passe anterior',
             ERROR_MESSAGE:
                 'A sua informação não corresponde aos nossos registos. Por favor, confirme as informações e tente de novo.',
@@ -177,7 +177,7 @@ const resources: LanguageFile = {
         },
         CONTACT_SUPPORT: {
             GENERAL_QUESTIONS: 'Questões Gerais',
-            SUPPORT_MESSAGE: 'Para questões, comentários, ou apoio técnico, por favor envie um e-mail para',
+            SUPPORT_MESSAGE: 'Para questões, comentários, ou apoio técnico, por favor envie um e-mail para ',
             EMERGENCY_SUPPORT: 'Apoio de Emergência',
             TECHNICAL_ASSISTANCE: 'Para apoio técnico, por favor contacte ',
         },
