@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Add `VERIFICATION_CODE_PROMPT` translations.
 
+### Fixed
+
+-   Fix Portuguese translation issues ([#72](https://github.com/brightlayer-ui/react-auth-shared/issues/72)).
+
 ## v3.7.0 (April 26, 2022)
 
 ### Added
