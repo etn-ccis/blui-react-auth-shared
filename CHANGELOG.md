@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
--   Fix Portuguese translation issues ([#72](https://github.com/brightlayer-ui/react-auth-shared/issues/72)).
+-   Fix Portuguese translation issues ([#74](https://github.com/brightlayer-ui/react-auth-shared/issues/74)).
 
 ## v3.7.0 (April 26, 2022)
 
