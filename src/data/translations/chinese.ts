@@ -42,6 +42,7 @@ const resources: LanguageFile = {
             CONTACT: '联系伊顿客服人员',
             ERROR: '错误！',
             EMAIL_ENTRY_ERROR: '请输入有效的电子邮件地址',
+            USERNAME_ENTRY_ERROR: '请输入有效的用户名',
             SUCCESS: '成功',
             FAILURE: '失败',
             LOADING: '正在加载中……',
