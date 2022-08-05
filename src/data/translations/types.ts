@@ -39,6 +39,7 @@ export type AuthTranslations = {
         CONTACT: string;
         ERROR: string;
         EMAIL_ENTRY_ERROR: string;
+        USERNAME_ENTRY_ERROR: string;
         SUCCESS: string;
         FAILURE: string;
         LOADING: string;

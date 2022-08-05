@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v3.7.2 (unreleased)
+
+### Added
+
+-   Add `USERNAME_ENTRY_ERROR` translations.
+-   Add `USERNAME_REGEX` constant for validating username entries.
+
 ## v3.7.1 (August 4, 2022)
 
 ### Added
