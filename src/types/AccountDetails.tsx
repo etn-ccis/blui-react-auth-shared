@@ -17,7 +17,7 @@ export type AccountDetailsFormProps = {
     onDetailsChanged: (details: CustomAccountDetails | null, valid: boolean) => void;
     initialDetails?: CustomAccountDetails;
     onSubmit?: () => void;
-    shouldFocusFirstCustomInput?: boolean;
+    customAccountDetailsRef?: React.RefObject<any>;
 };
 
 export type RegistrationData = {
