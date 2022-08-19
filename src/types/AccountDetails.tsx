@@ -1,4 +1,4 @@
-import { TextInput } from "react-native";
+import { TextInput } from 'react-native';
 
 /**
  * Type to represent the input of the account details component.
