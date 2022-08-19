@@ -1,3 +1,5 @@
+import { TextInput } from "react-native";
+
 /**
  * Type to represent the input of the account details component.
  *
@@ -17,7 +19,7 @@ export type AccountDetailsFormProps = {
     onDetailsChanged: (details: CustomAccountDetails | null, valid: boolean) => void;
     initialDetails?: CustomAccountDetails;
     onSubmit?: () => void;
-    customAccountDetailsRef?: React.RefObject<any>;
+    ref?: React.RefObject<TextInput>;
 };
 
 export type RegistrationData = {
