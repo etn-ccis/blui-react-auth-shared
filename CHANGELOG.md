@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Add `USERNAME_ENTRY_ERROR` translations.
 -   Add `USERNAME_REGEX` constant for validating username entries.
+-   Add optional `ref` prop to `AccountDetailsFormProps`.
 
 ## v3.7.1 (August 4, 2022)
 
