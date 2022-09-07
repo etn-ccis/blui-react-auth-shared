@@ -42,6 +42,7 @@ const resources: LanguageFile = {
             CONTACT: 'Contacter un représentant du support Eaton',
             ERROR: 'Erreur!',
             EMAIL_ENTRY_ERROR: "S'il vous plaît entrer un email valide",
+            USERNAME_ENTRY_ERROR: "Merci d'entrer un nom d'utilisateur valide",
             SUCCESS: 'Succès',
             FAILURE: 'Échec',
             LOADING: 'le chargement...',
