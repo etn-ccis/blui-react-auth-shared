@@ -45,5 +45,3 @@ export const translations = {
     chinese: chinese,
     portuguese: portuguese,
 };
-
-export * from './helpers/parseTextForJSX';
