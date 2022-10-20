@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
--   Removed export of files using regex named capture groups to fix conflicts with hermes engine.
+-   Refactor functions that use regex named capture groups to fix conflicts with hermes engine.
 
 ## v3.7.2 (September 7, 2022)
 

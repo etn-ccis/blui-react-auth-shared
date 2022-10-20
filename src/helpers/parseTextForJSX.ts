@@ -11,18 +11,9 @@ export type ParsedJSXText = {
     text: string;
 };
 
-/**
- * @ignore
- */
-const tagRegex = /^<(?<tag>\w+)>(?<text>.+?)<\/\k<tag>>/s;
-/**
- * @ignore
- */
-const beforeTagRegex = /^(?<text>.+?)(?=<\w+?>)/s;
+const tagRegex = /^<(\w+?)>(.+?)<\/(\w+?)>/s;
+const beforeTagRegex = /^(.+?)(?=<\w+?>)/s;
 
-/**
- * Creates an array of [[ParsedJSXText]] from a string, separating the string into substrings accompanied by a tag.
- */
 const parseNextChunk = (textToParse: string): ParsedJSXText[] => {
     const tagMatch = tagRegex.exec(textToParse);
     const beforeTagMatch = beforeTagRegex.exec(textToParse);
@@ -32,20 +23,22 @@ const parseNextChunk = (textToParse: string): ParsedJSXText[] => {
     let nextIndex = textToParse.length;
 
     if (tagMatch) {
-        tag = tagMatch.groups?.tag ?? '';
-        text = tagMatch.groups?.text ?? '';
+        tag = tagMatch[1] ?? '';
+        text = tagMatch[2] ?? '';
         nextIndex = tagMatch[0].length;
     } else if (beforeTagMatch) {
-        text = beforeTagMatch.groups?.text ?? '';
+        text = beforeTagMatch[1] ?? '';
         nextIndex = beforeTagMatch[0].length;
     } else {
         text = textToParse;
     }
 
     const result = [{ tag, text }];
+
     if (textToParse.length > 0) {
         return [...result, ...parseNextChunk(textToParse.substring(nextIndex))];
     }
+
     return result;
 };
 
