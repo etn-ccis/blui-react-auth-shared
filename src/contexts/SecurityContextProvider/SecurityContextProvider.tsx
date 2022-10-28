@@ -46,7 +46,7 @@ const useSecurityActions = (): SecurityContextActions => {
  *  @public
  *  @category Component
  */
-const SecurityContextProvider: React.FC<React.PropsWithChildren<unknown>> = (props) => {
+const SecurityContextProvider: React.FC<React.PropsWithChildren> = (props) => {
     const initialContextState: SecurityContextState = {
         userId: undefined,
         email: undefined,
