@@ -372,6 +372,8 @@ Custom configuration for the error message display on the login screen.
     -   Sets the background color of the message box. For use with the `message-box` and `both` modes.
     -   Default: theme.palette.error.main
 
+> Note: If you use the recommended `'LOGIN.INVALID_CREDENTIALS'` translation string as your login error message, form field errors will be shown in place of the custom configuration.
+
 ## PasswordRequirement
 
 Definition for a security/complexity requirement for application passwords.
