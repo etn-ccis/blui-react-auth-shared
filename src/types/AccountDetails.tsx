@@ -17,7 +17,7 @@ export type AccountDetailsFormProps = {
     onDetailsChanged: (details: CustomAccountDetails | null, valid: boolean) => void;
     initialDetails?: CustomAccountDetails;
     onSubmit?: () => void;
-}
+};
 
 export type RegistrationData = {
     accountDetails?: AccountDetailInformation | null | undefined;
