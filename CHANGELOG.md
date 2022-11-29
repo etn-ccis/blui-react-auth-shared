@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Moved optional `ref` prop from `AccountDetailsFormProps` to new `AccountDetailsFormMobileProps` type definition.
+-   Update `AccountDetailsFormProps` `ref` type definition to be `React.RefObject<any>`.
 
 ## v3.7.3 (October 28, 2022)
 
