@@ -39,7 +39,7 @@
         "prettier:check": "prettier \"**/**.{tsx,ts,js,json,md}\" --check",
         "build": "bob build",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
-        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-react-auth-shared",
         "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "validate": "yarn prettier && yarn lint && yarn typescript && yarn test",
         "precommit": "yarn validate && yarn generate:licenses",
