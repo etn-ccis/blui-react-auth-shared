@@ -7,10 +7,10 @@
         "name": "Brightlayer UI",
         "email": "brightlayer-ui@eaton.com"
     },
-    "homepage": "https://github.com/brightlayer-ui/react-auth-shared/tree/master/",
+    "homepage": "https://github.com/etn-ccis/blui-react-auth-shared/tree/master/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/brightlayer-ui/react-auth-shared/tree/master"
+        "url": "https://github.com/etn-ccis/blui-react-auth-shared/tree/master"
     },
     "keywords": [
         "Brightlayer UI",
