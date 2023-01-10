@@ -28,14 +28,14 @@ We recommend you use the [@brightlayer-ui/react-native-auth-workflow](https://ww
 
 # Documentation
 
-More information about exported objects and functions can found in the [API](https://github.com/brightlayer-ui/react-auth-shared/tree/master/docs/API.md) documentation.
+More information about exported objects and functions can found in the [API](https://github.com/etn-ccis/blui-react-auth-shared/tree/master/docs/API.md) documentation.
 
 # Contributors
 
 To work on this package as a contributor, first clone down the repository:
 
 ```shell
-git clone https://github.com/brightlayer-ui/react-auth-shared
+git clone https://github.com/etn-ccis/blui-react-auth-shared
 cd react-auth-shared
 ```
 
