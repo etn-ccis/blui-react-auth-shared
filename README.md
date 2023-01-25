@@ -1,6 +1,6 @@
 # React Auth Shared
 
-![npm (scoped)](https://img.shields.io/npm/v/@brightlayer-ui/react-auth-shared)
+![npm (scoped)](https://img.shields.io/npm/v/@brightlayer-ui/react-auth-shared) [![codecov](https://codecov.io/gh/etn-ccis/blui-react-auth-shared/branch/master/graph/badge.svg?token=BKDXMXPSDI)](https://codecov.io/gh/etn-ccis/blui-react-auth-shared)
 
 The React Auth Shared package provides extracts the common logic shared by [@brightlayer-ui/react-native-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/react-native-auth-workflow) and [@brightlayer-ui/react-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/react-auth-workflow). This package must be used in combination with workflow screen definitions (either by using one of the packages above, or by building your own and integrating them yourself).
 
