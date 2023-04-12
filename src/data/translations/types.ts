@@ -144,6 +144,7 @@ export type AuthTranslations = {
         CONFIRM_NEW_PASSWORD: string;
         CANCEL: string;
         UPDATE: string;
+        CONFIRM_PASSWORD_ERROR: string;
     };
     SETTINGS: {
         TITLE: string;

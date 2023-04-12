@@ -161,6 +161,7 @@ const resources: LanguageFile = {
             CONFIRM_NEW_PASSWORD: 'Confirmar nova palavra-passe',
             CANCEL: 'Cancelar',
             UPDATE: 'Atualizar',
+            CONFIRM_PASSWORD_ERROR: 'Senha não corresponde',
         },
         SETTINGS: {
             TITLE: 'Definições',

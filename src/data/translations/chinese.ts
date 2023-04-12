@@ -156,6 +156,7 @@ const resources: LanguageFile = {
             CONFIRM_NEW_PASSWORD: '确认新密码',
             CANCEL: '取消',
             UPDATE: '更新',
+            CONFIRM_PASSWORD_ERROR: '密码不匹配',
         },
         SETTINGS: {
             TITLE: '设置',
