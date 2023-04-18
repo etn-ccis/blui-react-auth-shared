@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Changed language and translations on verify email registration resend code.
+-   Changed verbiage and translations on verify email registration resend code.
 
 ## v3.7.4 (November 30, 2022)
 
