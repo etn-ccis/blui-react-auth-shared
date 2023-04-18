@@ -18,7 +18,7 @@ const resources: LanguageFile = {
             CHANGE_LANGUAGE: '¡Cambie el idioma aquí!',
             GO_HOME: 'Ir a casa',
             GO_TEST: 'Ir a la página de prueba',
-            RESEND: 'Reenviar',
+            RESEND: 'Enviar de nuevo',
             UPDATE: 'Actualizar',
             REMEMBER: 'Recordar contraseña',
         },
@@ -79,7 +79,7 @@ const resources: LanguageFile = {
             VERIFY_EMAIL: {
                 MESSAGE: `Se ha enviado un código de verificación a la dirección de correo electrónico que proporcionó. Haga clic en el enlace o ingrese el código abajo para continuar. Este código es válido por 30 minutos.`,
                 RESEND: 'Reenviar correo electrónico de verificación',
-                VERIFICATION_CODE_PROMPT: '¿No recibiste un código?',
+                VERIFICATION_CODE_PROMPT: '¿No recibiste un correo electrónico?',
                 VERIFICATION: 'Código de verificación',
             },
         },
