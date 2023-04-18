@@ -18,7 +18,7 @@ const resources: LanguageFile = {
             CHANGE_LANGUAGE: 'Change Language here!',
             GO_HOME: 'Go to Home',
             GO_TEST: 'Go to Test Page',
-            RESEND: 'Resend',
+            RESEND: 'Send Again',
             UPDATE: 'Update',
             REMEMBER: 'Remember Me',
         },
@@ -80,7 +80,7 @@ const resources: LanguageFile = {
                 MESSAGE:
                     'A verification code has been sent to the email address you provided. Click the link or enter the code below to continue. This code is valid for 30 minutes.',
                 RESEND: 'Resend Verification Email',
-                VERIFICATION_CODE_PROMPT: "Didn't receive a code?",
+                VERIFICATION_CODE_PROMPT: "Didn't receive email?",
                 VERIFICATION: 'Verification Code',
             },
         },
