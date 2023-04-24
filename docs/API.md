@@ -47,6 +47,9 @@ import { AuthUIContextProvider } from '@brightlayer-ui/react-native-auth-workflo
 -   **enableResetPassword**: (optional) _`boolean`_
     -   When true, the Forgot Password and Reset Password workflow screens will be accessible
     -   Default: true
+-   **enableCreatePassword**: (optional) _`boolean`_
+    -   When true, the Create Password screen will be part of registration
+    -   Default: true
 -   **htmlEula** (optional): _`boolean`_
     -   Set to true if your EULA needs to be rendered as HTML
     -   Default: false
