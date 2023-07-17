@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Ability to hide the CreatePassword screen
 
+### Added
+
+-   Ability to hide the Login form in login screen
+
 ### Changed
 
 -   Changed resend email button's text label on the email verification screen.

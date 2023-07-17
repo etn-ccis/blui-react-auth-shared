@@ -206,6 +206,12 @@ type AuthUIContextProviderProps = {
      * Default: false
      */
     disablePagerAnimation?: boolean;
+    /**
+     * When true, the Login Form will be part of Login Screen
+     *
+     * Default: true
+     */
+    showLoginForm?: boolean;
 };
 
 export type {

@@ -41,6 +41,7 @@ export const AuthUIContextProvider: React.FC<React.PropsWithChildren<AuthUIConte
             accountAlreadyExistsScreen: props.accountAlreadyExistsScreen,
             registrationConfig: props.registrationConfig,
             disablePagerAnimation: props.disablePagerAnimation,
+            showLoginForm: props.showLoginForm,
         };
 
         return propsForContext;
@@ -72,6 +73,7 @@ export const AuthUIContextProvider: React.FC<React.PropsWithChildren<AuthUIConte
         props.showCybersecurityBadge,
         props.showSelfRegistration,
         props.registrationConfig,
+        props.showLoginForm,
     ]);
 
     return <AuthUIContext.Provider value={memoizedProps}>{props.children}</AuthUIContext.Provider>;

@@ -93,6 +93,9 @@ import { AuthUIContextProvider } from '@brightlayer-ui/react-native-auth-workflo
 -   **showSelfRegistration**: _`boolean`_
     -   When true, shows the Create Account button to allow for self registration.
     -   Default: true
+-   **showLoginForm**: (optional) _`boolean`_
+    -   When true, the Login Form will be part of Login Screen
+    -   Default: true
 
 ### SecurityContextProvider
 
