@@ -10,10 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   Ability to hide the CreatePassword screen
-
-### Added
-
--   Ability to hide the Login form in login screen
+-   Ability to hide the login form in the Login screen.
 
 ### Changed
 
