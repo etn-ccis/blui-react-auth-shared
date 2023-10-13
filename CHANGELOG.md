@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v3.8.0 (October 12, 2023)
+
+### Added
+
+-   Ability to hide the CreatePassword screen
+-   Ability to hide the login form in the Login screen.
+
+### Changed
+
+-   Changed resend email button's text label on the email verification screen.
+
 ## v3.7.4 (November 30, 2022)
 
 ### Changed
@@ -33,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
--   Fix Portuguese translation issues ([#74](https://github.com/brightlayer-ui/react-auth-shared/issues/74)).
+-   Fix Portuguese translation issues ([#74](https://github.com/etn-ccis/blui-react-auth-shared/issues/74)).
 
 ## v3.7.0 (April 26, 2022)
 
@@ -51,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
--   Fixed non-bold text on Forgot Password screen when using Portuguese translations ([#59](https://github.com/brightlayer-ui/react-auth-shared/issues/59)).
+-   Fixed non-bold text on Forgot Password screen when using Portuguese translations ([#59](https://github.com/etn-ccis/blui-react-auth-shared/issues/59)).
 
 ## v3.6.0 (December 9, 2021)
 

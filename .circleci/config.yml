@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-    codecov: codecov/codecov@1.1.3
+    codecov: codecov/codecov@3.2.2
     gh: circleci/github-cli@1.0.3
 jobs:
   build_shared:
@@ -53,7 +53,7 @@ jobs:
                 at: .
             - codecov/upload:
                 file: './coverage/clover.xml'
-                token: 02bbcfe3-8746-4ca0-99e3-720414bb8fbc
+                token: CODECOV_TOKEN
 
   publish:
     docker:
@@ -72,17 +72,6 @@ jobs:
           command:  |
             yarn publish:package -b $CIRCLE_BRANCH
 
-  tag:
-    docker:
-      - image: cimg/node:14.19.0-browsers
-    steps:
-      - checkout
-      - gh/setup
-      - run:
-          name: Tag @brightlayer-ui/react-auth-shared
-          command: |
-            yarn tag:package -b $CIRCLE_BRANCH -s -blui-react-auth-shared
-
 workflows:
   version: 2
   react_auth_shared:
@@ -96,17 +85,10 @@ workflows:
               only:
                 - master
                 - dev
-      - tag:
-          requires:
-            - publish
-          filters:
-            branches:
-              only:
-                - master
       - coverage_report:
-                   requires:
-                        - build_shared
-                   filters:
-                        branches:
-                            only:
-                                - master
+           requires:
+                - build_shared
+           filters:
+                branches:
+                    only:
+                        - master

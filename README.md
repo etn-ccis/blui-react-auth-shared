@@ -1,6 +1,6 @@
 # React Auth Shared
 
-![npm (scoped)](https://img.shields.io/npm/v/@brightlayer-ui/react-auth-shared)
+[![](https://img.shields.io/circleci/project/github/etn-ccis/blui-react-auth-shared/master.svg?style=flat)](https://circleci.com/gh/etn-ccis/blui-react-auth-shared/tree/master) ![npm (scoped)](https://img.shields.io/npm/v/@brightlayer-ui/react-auth-shared) [![codecov](https://codecov.io/gh/etn-ccis/blui-react-auth-shared/branch/master/graph/badge.svg?token=BKDXMXPSDI)](https://codecov.io/gh/etn-ccis/blui-react-auth-shared)
 
 The React Auth Shared package provides extracts the common logic shared by [@brightlayer-ui/react-native-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/react-native-auth-workflow) and [@brightlayer-ui/react-auth-workflow](https://www.npmjs.com/package/@brightlayer-ui/react-auth-workflow). This package must be used in combination with workflow screen definitions (either by using one of the packages above, or by building your own and integrating them yourself).
 
@@ -28,14 +28,14 @@ We recommend you use the [@brightlayer-ui/react-native-auth-workflow](https://ww
 
 # Documentation
 
-More information about exported objects and functions can found in the [API](https://github.com/brightlayer-ui/react-auth-shared/tree/master/docs/API.md) documentation.
+More information about exported objects and functions can found in the [API](https://github.com/etn-ccis/blui-react-auth-shared/tree/master/docs/API.md) documentation.
 
 # Contributors
 
 To work on this package as a contributor, first clone down the repository:
 
 ```shell
-git clone https://github.com/brightlayer-ui/react-auth-shared
+git clone https://github.com/etn-ccis/blui-react-auth-shared
 cd react-auth-shared
 ```
 

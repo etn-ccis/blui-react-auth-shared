@@ -73,6 +73,12 @@ type AuthUIContextProviderProps = {
      */
     enableResetPassword?: boolean;
     /**
+     * When true, the Create Password screen will be part of the registration flow for new users
+     *
+     * Default: true
+     */
+    enableCreatePassword?: boolean;
+    /**
      * When true, the Remember Me button will be available on the login screen.
      *
      * Default: true
@@ -200,6 +206,12 @@ type AuthUIContextProviderProps = {
      * Default: false
      */
     disablePagerAnimation?: boolean;
+    /**
+     * When true, the login form will be part of the Login screen.
+     *
+     * Default: true
+     */
+    showLoginForm?: boolean;
 };
 
 export type {
