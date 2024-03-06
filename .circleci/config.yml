@@ -6,7 +6,7 @@ jobs:
   build_shared:
     working_directory: ~/react-auth-shared
     docker:
-      - image: cimg/node:14.19.0-browsers
+      - image: cimg/node:18.17.0-browsers
     resource_class: large
     steps:
       - checkout
@@ -46,7 +46,7 @@ jobs:
   coverage_report:
         working_directory: ~/react-auth-shared
         docker:
-            - image: cimg/node:14.19.0-browsers
+            - image: cimg/node:18.17.0-browsers
         steps:
             - checkout
             - attach_workspace:
@@ -57,7 +57,7 @@ jobs:
 
   publish:
     docker:
-      - image: cimg/node:14.19.0-browsers
+      - image: cimg/node:18.17.0-browsers
     steps:
       - checkout
       - attach_workspace:
